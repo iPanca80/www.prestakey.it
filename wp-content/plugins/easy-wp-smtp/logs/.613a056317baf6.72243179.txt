@@ -1,0 +1,2 @@
+[09/09/2021 1:00:19 PM] - Easy WP SMTP debug log file
+
