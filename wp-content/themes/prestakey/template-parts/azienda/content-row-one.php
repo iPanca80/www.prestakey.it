@@ -7,7 +7,7 @@
             </div>
             <div class="col-7">
             <h4 class="mb-5 mt-5 text-white">
-                Con <strong>PrestaKey</strong> puoi ottenere fino a 150.000 € nella maniera più rapida possibile. In pochi click, <strong>senza burocrazia e procedure complicate</strong>. Sia per ditte individuali che per aziende
+                Con <strong>PrestaKey</strong> puoi ottenere fino a 150.000 € nella maniera più rapida possibile. In pochi click, <strong>senza burocrazia e procedure complicate</strong>. Sia per ditte individuali che per aziende.
                 </h4>
             </div>
         </div>
