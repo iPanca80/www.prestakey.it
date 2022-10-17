@@ -7,8 +7,7 @@
             </div>
             <div class="col-8">
                 <h4 class="mb-5 mt-5 text-white">
-                    <p class="fs-5">Con l’avvento di Internet, il mondo del credito è cambiato. <strong>PrestaKey  è la nuova FinTech che, con l’aiuto di tecnologie innovative, aiuta privati e aziende a richiedere la <strong>giusta liquidità per i loro bisogni e il loro business</strong>. In pochi click, tutto online.</p>
-                    <p class="fs-5">Nell’ottica di un continuo miglioramento, <strong>PrestaKey</strong> è alla costante ricerca di banche e istituti di credito che si pongano come obiettivo quello di mettere a disposizione <strong>i propri prodotti finanziari agli utenti della piattaforma</strong>.</p>
+                    Con l’avvento di Internet il mondo del credito è cambiato. <strong>PrestaKey</strong> è la nuova FinTech che, grazie a tecnologie innovative, <strong>aiuta privati e aziende a richiedere la giusta liquidità</strong> per i loro bisogni e il loro business. In pochi click, tutto online. Nell’ottica di un continuo miglioramento, <strong>PrestaKey è alla costante ricerca di banche e istituti di credito</strong> che si pongano come obiettivo quello di mettere a disposizione i propri prodotti finanziari agli utenti della piattaforma.
                 </h4>
             </div>
         </div>

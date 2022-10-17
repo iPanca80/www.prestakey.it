@@ -11,7 +11,7 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><strong>PrestaKey</strong>: il tuo partner ideale. <strong>I nostri contatti</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><strong>PrestaKey</strong>: il tuo partner ideale. Contatta la piattaforma.</h1>
             </div>
             <div class="col-12">
                 <div class="col-12">

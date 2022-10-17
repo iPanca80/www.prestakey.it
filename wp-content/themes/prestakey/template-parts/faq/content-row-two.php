@@ -1,5 +1,13 @@
 
 <!-- Row 02 - start -->
+<style>
+.post-type-archive-faq section.row-two .container {
+    background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-faq-row-two.svg);
+    background-repeat: no-repeat;
+    background-position: left 335px;
+    background-size: 29%;
+}
+</style>
 <section class="row-two row-custom bg-color">
     <div class="container">
     <div class="col-12 d-flex justify-content-end">

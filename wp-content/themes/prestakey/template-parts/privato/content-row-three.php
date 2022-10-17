@@ -11,7 +11,7 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5">Compila il form: grazie a <strong>PrestaKey</strong> avrai la tua liquidità <strong>in pochi click</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5">Compila il form: avrai <strong>la tua liquidità in pochi click</strong>.</h1>
             </div>
             <div class="col-12">
                 <div class="col-12">

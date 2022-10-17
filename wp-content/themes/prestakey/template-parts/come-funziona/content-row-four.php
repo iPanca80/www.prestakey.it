@@ -44,8 +44,8 @@
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <h6 class="col-8 mb-5 mt-5 text-start">
-                    <p>La piattaforma si rivolge ad <a href="/sono-una-azienda/">aziende, ditte individuali</a> e <a href="/sono-un-privato/">privati</a>. In pochi minuti PrestaKey analizza la tua capacità finanziaria in modo esaustivo e ti suggerisce il prodotto più adatto al tuo profilo. L’obiettivo è quello di ridurre al minimo il rischio di veder rifiutate le tue richieste di liquidità da parte di banche o istituti di credito.</p>
-                    <p>L’intero processo si svolge online, senza noiosi appuntamenti in filiale e senza dover attendere l’incontro con il gestore bancario. In totale sicurezza, preservando la tua privacy.</p>
+                    <p>La piattaforma si rivolge ad <a href="/sono-una-azienda/">aziende, ditte individuali</a> e <a href="/sono-un-privato/">privati</a>. In pochi minuti <strong>PrestaKey</strong> analizza la tua capacità finanziaria in modo esaustivo e ti suggerisce il prodotto più adatto al tuo profilo. L’obiettivo è quello di <strong>ridurre al minimo il rischio di veder rifiutate le tue richieste di liquidità</strong> da parte di banche o istituti di credito.</p>
+                    <p>L’intero processo si svolge online, senza noiosi appuntamenti in filiale e senza dover attendere l’incontro con il gestore bancario. <strong>In totale sicurezza, preservando la tua privacy</strong>.</p>
                 </h6>
             </div>
             <div class="col-12">

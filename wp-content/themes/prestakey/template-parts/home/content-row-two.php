@@ -2,7 +2,7 @@
 <!-- Row 02 - start -->
 <style>
     .home section.row-two .container {
-        background: url(http://prestakey/wp-content/themes/prestakey/svg/illustrazione-home-row-two.svg);
+        background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-home-row-two.svg);
         background-repeat: no-repeat;
         background-position: left 37px;
         background-size: 22%;
@@ -55,8 +55,7 @@
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 text-start">
                     <h6 class="mb-5 mt-5">
-                    <p>Grazie alla <strong>tecnologia avanzata di PrestaKey</strong>, riceverai una risposta immediata alla tua <strong>richiesta di credito</strong>. E in pochi giorni avrai la liquidità necessaria 
-                    per i tuoi progetti. L’intero processo è online, gratuito e senza impegno.</p>
+                    <p>Grazie alla tecnologia avanzata di <strong>PrestaKey</strong>, riceverai una risposta immediata alla tua <strong>richiesta di credito</strong>. In pochi giorni avrai la liquidità necessaria per i tuoi progetti. L’intero processo è <strong>online, gratuito e senza impegno</strong>.</p>
                     </h6>
                 </div>
             </div>

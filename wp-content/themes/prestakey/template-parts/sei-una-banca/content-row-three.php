@@ -19,7 +19,7 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5"><strong>PrestaKey</strong>: un’esperienza pluriennale <strong>nella gestione e vendita di prodotti bancari</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5">Gestione e vendita di prodotti bancari, con <strong>PrestaKey</strong>.</h1>
             </div>
             <div class="col-12">
                 <div class="col-12">

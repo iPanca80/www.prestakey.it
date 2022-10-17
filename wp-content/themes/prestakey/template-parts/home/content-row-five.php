@@ -20,7 +20,7 @@
             <?php get_template_part( '/template-parts/contact-form' ); ?>
             </div>
             <div class="mb-5 mt-5 col-12">
-                <p class="h6 col-6 text-white">Se hai bisogno di un <strong>finanziamento</strong> per realizzare i tuoi progetti, <strong>PrestaKey</strong> ti aiuterà a trovare la soluzione migliore per te!</p>
+                <p class="h6 col-6 text-white">Se hai bisogno di un <strong>finanziamento</strong> per realizzare i tuoi progetti, <strong>PrestaKey</strong> ti aiuterà a trovare la soluzione migliore per te.</p>
             </div>
         </div>
     </div>

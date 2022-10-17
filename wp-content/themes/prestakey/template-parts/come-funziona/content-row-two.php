@@ -30,7 +30,7 @@
                 <div class="col-12 d-flex justify-content-end">
                     <h6 class="col-8 mb-5 mt-5 text-start">
                         <p>Per merito di un’innovativa tecnologia, grazie a <strong>PrestaKey</strong> puoi trovare la migliore formula di finanziamento per le tue esigenze. In pochi click avrai una risposta in breve tempo alla tua richiesta di credito e potrai scegliere di essere contattato dai nostri partner finanziari che ti offriranno la soluzione più adatta a te. Affidandoti ai nostri partner otterrai la liquidità necessaria per i tuoi progetti <strong>entro cinque giorni lavorativi. (*)</strong></p>
-                        <p>Niente più burocrazia, nessun appuntamento in banca, zero ricerche in rete. Dimentica il tempo perso: con PrestaKey avrai il supporto necessario per la tua richiesta di finanziamento e il tuo credito."</p>
+                        <p>Niente più burocrazia, nessun appuntamento in banca, zero ricerche in rete. Dimentica il tempo perso: con <strong>PrestaKey</strong> avrai il supporto necessario per la tua richiesta di finanziamento e il tuo credito."</p>
                         <p style="font-size:10px;"><strong>(*) i tempi possono variare in funzione dei tempi di allineamento tra l’Istituto Bancario erogante e l’Istituto Bancario del richiedente.</strong></p>
                     </h6>
                 </div>

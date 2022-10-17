@@ -60,7 +60,7 @@
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 justify-content-end text-start">
                 <p class="mt-5 mb-1"><strong>* Perché la piattaforma ha bisogno degli estratti conto delle mie banche?</strong></p>
-                <p class="mb-5 lh-base">Per farti la miglior proposta possibile, Prestaky ha bisogno di alcune informazioni sui conti delle banche che utilizzi. Ti chiederà, quindi, di condividere questi dettagli collegando i tuoi conti alla richiesta di finanziamento. Per farlo, ti basterà accedereal tuo internet banking durante il processo, basteranno pochi click. Grazie all’Open Banking, questi passaggi si svolgeranno nella massima sicurezza e nel pieno rispetto della tua privacy. In pochi minuti otterrai una risposta alla tua richiesta.</p>  
+                <p class="mb-5 lh-base">Per farti la miglior proposta possibile, Prestakey ha bisogno di alcune informazioni sui conti della banca che utilizzi. Ti chiederà di condividere questi dettagli collegando il tuo conto alla richiesta di finanziamento. Per farlo ti basterà accedere al tuo internet banking durante il processo. Grazie all’Open Banking, questi passaggi si svolgeranno nella massima sicurezza e nel pieno rispetto della tua privacy. In pochi minuti otterrai una risposta alla tua richiesta.</p>  
                 </div>
             </div>
         </div>
