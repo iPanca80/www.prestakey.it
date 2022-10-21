@@ -1,4 +1,12 @@
+<?php 
 
+if( have_rows('noi_row_6') ):
+    while( have_rows('noi_row_6') ): the_row();
+
+    $noiRow6Titolo = get_sub_field('noi_row_6_titolo');
+    $noiRow6SottoTitolo = get_sub_field('noi_row_6_sottotitolo');
+
+?>
 <!-- Row 06 - start -->
 <style>
     .page-id-46 section.row-six .container {
@@ -21,14 +29,12 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start">Scegli il <strong>finanziamento giusto</strong> per le <strong>tue necessità</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $noiRow6Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 text-start">
                     <h6 class="mb-5 mt-5">
-                    <p><strong>Niente più burocrazia, nessun appuntamento in banca, zero ricerche in rete.</strong></p>
-
-<p>Dimentica il tempo perso: con <strong>PrestaKey</strong> hai il supporto necessario in tutti i passaggi della tua richiesta di prestito e il tuo credito in pochissimo tempo.</p>
+                    <?php echo $noiRow6SottoTitolo ?>
                     </h6>
                 </div>
             </div>
@@ -59,3 +65,9 @@
     </div>
 </section>
 <!-- Row 06 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

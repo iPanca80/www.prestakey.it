@@ -128,17 +128,28 @@ function my_remove_menu_pages() {
   global $user_ID;
 
   if ( $user_ID != 1 && $user_ID != 6 ) { //your user id
-   remove_menu_page('link-manager.php'); // Links
-   remove_menu_page('edit-comments.php'); // Comments
-   remove_menu_page('edit.php?post_type=page'); // Pages
-   remove_menu_page('plugins.php'); // Plugins
-   remove_menu_page('themes.php'); // Appearance
-   remove_menu_page('users.php'); // Users
-   remove_menu_page('tools.php'); // Tools
-   remove_menu_page('options-general.php'); // Settings
-   remove_menu_page('wpcf7'); // Contact Form 7 Menu
-   remove_menu_page('profile.php');
-   remove_menu_page('upload.php');
- }
+	remove_menu_page('link-manager.php'); // Links
+	remove_menu_page('edit-comments.php'); // Comments
+	remove_menu_page('plugins.php'); // Plugins
+	remove_menu_page('themes.php'); // Appearance
+	remove_menu_page('users.php'); // Users
+	remove_menu_page('tools.php'); // Tools
+	remove_menu_page('options-general.php'); // Settings
+	remove_menu_page('wpcf7'); // Contact Form 7 Menu
+	remove_menu_page('profile.php');
+	remove_menu_page('upload.php');
+  }
+ 
+  if ( $user_ID != 2 && $user_ID != 1 ) {
+	  remove_menu_page('edit.php?post_type=page'); // Pages
+  }
 
 }
+
+/**
+   * Remove tag p in acf field
+   */
+function my_acf_add_local_field_groups() {
+    remove_filter('acf_the_content', 'wpautop' );
+}
+add_action('acf/init', 'my_acf_add_local_field_groups');

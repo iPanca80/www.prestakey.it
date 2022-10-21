@@ -1,13 +1,22 @@
+<?php 
+
+    if( have_rows('azienda_row_5') ):
+        while( have_rows('azienda_row_5') ): the_row();
+
+        $aziendaRow5Titolo = get_sub_field('azienda_row_5_titolo');
+        $aziendaRow5sottotitolo = get_sub_field('azienda_row_5_sottotitolo');
+
+?>
 <!-- Row 05 - start -->
 <section class="row-five row-custom bg-shade">
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5 text-white">Vuoi saperne di più?</h1>
+                <h1 class="col-8 mb-5 mt-5 text-white"><?php echo $aziendaRow5Titolo ?></h1>
             </div>
             <div class="mb-5 mt-5 col-12 d-flex">
             <div class="col-6">
-                <h3 class="col-12 text-white">Scopri come funziona <strong>PrestaKey</strong>, lo strumento più efficace per avere credito..</h3>
+                <h3 class="col-12 text-white"><?php echo $aziendaRow5sottotitolo ?></h3>
             </div>
             <div class="col-6 d-flex justify-content-end">
                 <a href="/come-funziona/" class="cta-white">
@@ -23,3 +32,9 @@
     </div>
 </section>
 <!-- Row 05 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

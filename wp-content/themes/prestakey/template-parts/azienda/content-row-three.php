@@ -1,3 +1,11 @@
+<?php 
+
+    if( have_rows('azienda_row_3') ):
+        while( have_rows('azienda_row_3') ): the_row();
+
+        $aziendaRow3Titolo = get_sub_field('azienda_row_3_titolo');
+
+?>
 <!-- Row 03 - start -->
 <style>
  .page-id-30 section.row-three .container {
@@ -11,7 +19,7 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5">Compila il form: avrai <strong>la tua liquidità in pochi click</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5"><?php echo $aziendaRow3Titolo ?></h1>
             </div>
             <div class="col-12">
                 <div class="col-12">
@@ -22,3 +30,9 @@
     </div>
 </section>
 <!-- Row 03 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

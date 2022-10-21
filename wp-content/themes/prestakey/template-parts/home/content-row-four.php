@@ -1,4 +1,13 @@
+<?php 
 
+    if( have_rows('home_row_4') ):
+        while( have_rows('home_row_4') ): the_row();
+
+        $homeRow4Titolo = get_sub_field('home_row_4_titolo');
+        $homeRow4sottotitolo = get_sub_field('home_row_4_sottotitolo');
+        $homeRow4sottotitolo2 = get_sub_field('home_row_4_sottotitolo_2');
+
+?>
 <!-- Row 04 - start -->
 <style>
     .home section.row-four .container {
@@ -13,11 +22,11 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start">Tu crei il progetto, <strong>PrestaKey</strong> pensa al resto.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $homeRow4Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8">
-                <p class="fs-6 mb-3" style="margin-bottom:1.5rem !important;"> Con <strong>PrestaKey</strong> scoprirai un nuovo modo per avere credito.</p>
+                <p class="fs-6 mb-3" style="margin-bottom:1.5rem !important;"><?php echo $homeRow4sottotitolo ?></p>
                 <div class="col-12">
                     <a href="/sono-una-azienda/" class="cta-white">
                         <ul>
@@ -26,7 +35,7 @@
                         </ul>
                     </a>
                 </div>
-                <p class="h6 mb-3 mt-5" style="margin-bottom:1.5rem !important;margin-top:1.5rem !important;">Il mondo del finanziamento è cambiato. Con <strong>PrestaKey</strong> hai la possibilità di avere la liquidità necessaria per il tuo business o per i tuoi bisogni. Tutto online e in pochi click. Qualunque sia il motivo della tua richiesta, grazie a <strong>PrestaKey puoi ottenere il finanziamento perfetto per le tue caratteristiche</strong>.</p>
+                <p class="h6 mb-3 mt-5" style="margin-bottom:1.5rem !important;margin-top:1.5rem !important;"><?php echo $homeRow4sottotitolo2 ?></p>
                 <div class="col-12">
                     <a href="/come-funziona/" class="cta-white">
                         <ul>
@@ -41,3 +50,9 @@
     </div>
 </section>
 <!-- Row 04 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

@@ -1,15 +1,24 @@
+<?php 
+
+    if( have_rows('come_funziona_row_1') ):
+        while( have_rows('come_funziona_row_1') ): the_row();
+
+        $comeFunzionaRow1Titolo = get_sub_field('come_funziona_row_1_titolo');
+        $comeFunzionaRow1sottotitolo = get_sub_field('come_funziona_row_1_sottotitolo');
+
+?>
 <!-- Row slider - start -->
 <section class="row-one row-custom">
     <div class="col-12">
         <div class="slider">
             <div class="col-7">
-                <h1 class="mb-5 mt-5 text-white"><strong>Prestakey</strong>: la soluzione che facilita l’accesso al credito <strong>per privati e aziende</strong>.</h1>
+                <h1 class="mb-5 mt-5 text-white"><?php echo $comeFunzionaRow1Titolo ?></h1>
             </div>
             <div class="col-8">
                 <h4 class="mb-5 mt-5 text-white">
                 <!--<p class="fs-5">Per merito di <strong>un’innovativa tecnologia</strong>, grazie a PrestaKey puoi trovare la migliore formula di finanziamento per le tue esigenze. In <strong>pochi click</strong> avrai una <strong>risposta in breve tempo</strong> alla tua richiesta di credito e potrai scegliere di essere contattato dai nostri partner finanziari che ti offriranno la soluzione più adatta a te.
                 <strong>Affidandoti ai nostri partner otterrai la liquidità necessaria per i tuoi progetti entro cinque giorni lavorativi. (*)</strong></p>-->
-                L’obiettivo è <strong>aiutare le imprese e i privati ad accedere al credito</strong> nella maniera più facile, efficiente e veloce possibile, riducendo il rischio di risposte negative da parte delle banche.
+                <?php echo $comeFunzionaRow1sottotitolo ?>
                 <!--<p class="fs-6">(*) i tempi possono variare in funzione dei tempi di allineamento tra l’Istituto Bancario erogante e l’Istituto Bancario del richiedente </p>-->
                 </h4>
             </div>
@@ -36,3 +45,9 @@
         </div>
 </section>
 <!-- Row slider - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

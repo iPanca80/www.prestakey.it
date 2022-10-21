@@ -1,3 +1,16 @@
+<?php 
+
+    if( have_rows('come_funziona_row_4') ):
+        while( have_rows('come_funziona_row_4') ): the_row();
+
+        $comeFunzionaRow4Titolo = get_sub_field('come_funziona_row_4_titolo');
+        $comeFunzionaRow4sottotitolo = get_sub_field('come_funziona_row_4_sottotitolo');
+        $comeFunzionaRow4Titolo2 = get_sub_field('come_funziona_row_4_titolo_2');
+        $comeFunzionaRow4Titolo3 = get_sub_field('come_funziona_row_4_titolo_3');
+        $comeFunzionaRow4TitoloAsterisco = get_sub_field('come_funziona_row_4_titolo_asterisco');
+        $comeFunzionaRow4DescrizioneAsterisco = get_sub_field('come_funziona_row_4_descrizione_asterisco');
+
+?>
 <!-- Row 04 - start -->
 <style>
 .page-id-49 section.row-four > .container {
@@ -40,30 +53,35 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start">Realizza i tuoi progetti, <strong>PrestaKey</strong> ti dà credito.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $comeFunzionaRow4Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <h6 class="col-8 mb-5 mt-5 text-start">
-                    <p>La piattaforma si rivolge ad <a href="/sono-una-azienda/">aziende, ditte individuali</a> e <a href="/sono-un-privato/">privati</a>. In pochi minuti <strong>PrestaKey</strong> analizza la tua capacità finanziaria in modo esaustivo e ti suggerisce il prodotto più adatto al tuo profilo. L’obiettivo è quello di <strong>ridurre al minimo il rischio di veder rifiutate le tue richieste di liquidità</strong> da parte di banche o istituti di credito.</p>
-                    <p>L’intero processo si svolge online, senza noiosi appuntamenti in filiale e senza dover attendere l’incontro con il gestore bancario. <strong>In totale sicurezza, preservando la tua privacy</strong>.</p>
+                    <?php echo $comeFunzionaRow4sottotitolo ?>
                 </h6>
             </div>
             <div class="col-12">
-                <h2 class="col-12 mt-5 mb-5 text-center">Come funziona la <strong>procedura</strong>?</h2>
+                <h2 class="col-12 mt-5 mb-5 text-center"><?php echo $comeFunzionaRow4Titolo2 ?></h2>
                 <div class="col-12">
                 <?php get_template_part( '/template-parts/features' ); ?>
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h3 class="col-8 mt-5 mb-5 text-start"><strong>In qualsiasi momento</strong> potrai chiedere l’intervento di un nostro operatore che, al telefono, ti guiderà nella procedura.</h3>
+                <h3 class="col-8 mt-5 mb-5 text-start"><?php echo $comeFunzionaRow4Titolo3 ?></h3>
             </div>
             <div class="col-12 d-flex justify-content-end">
             <div class="col-8 text-start">
-                <p class="mt-5 mb-1"><strong>* Perché la piattaforma ha bisogno degli estratti conto delle mie banche?</strong></p>
-                <p class="mb-5 lh-base">Per farti la miglior proposta possibile, Prestaky ha bisogno di alcune informazioni sui conti delle banche che utilizzi. Ti chiederà, quindi, di condividere questi dettagli collegando i tuoi conti alla richiesta di finanziamento. Per farlo, ti basterà accedereal tuo internet banking durante il processo, basteranno pochi click. Grazie all’Open Banking, questi passaggi si svolgeranno nella massima sicurezza e nel pieno rispetto della tua privacy. In pochi minuti otterrai una risposta alla tua richiesta.</p>  
+                <p class="mt-5 mb-1"><?php echo $comeFunzionaRow4TitoloAsterisco ?></p>
+                <p class="mb-5 lh-base"><?php echo $comeFunzionaRow4DescrizioneAsterisco ?></p>  
             </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Row 04 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

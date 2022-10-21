@@ -94,6 +94,11 @@
 					get_template_part( '/template-parts/come-funziona/content-row-one' );
 				} /** content come-funziona */
 
+				/** content faq */
+				if ( is_page(300) ) {
+					get_template_part( '/template-parts/faq/content-row-one' );
+				} /** content faq */
+
 			?>
 		</div>
 	</header>

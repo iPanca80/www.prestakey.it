@@ -1,4 +1,12 @@
+<?php 
 
+    if( have_rows('contatti_row_2') ):
+        while( have_rows('contatti_row_2') ): the_row();
+
+        $contattiRow2Titolo = get_sub_field('contatti_row_2_titolo');
+        $contattiRow2sottotitolo = get_sub_field('contatti_row_2_sottotitolo');
+
+?>
 <!-- Row 02 - start -->
 <style>
     .page-id-40 section.row-two .container {
@@ -22,18 +30,13 @@
         <div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8">
-                    <h1 class="mb-5 mt-5 text-start">Contatta <strong>PrestaKey</strong> via mail, telefono o form dei contatti.</h1>
+                    <h1 class="mb-5 mt-5 text-start"><?php echo $contattiRow2Titolo ?></h1>
                 </div>
             </div>
             <div class="col-12">
                 <div class="col-12 d-flex justify-content-end">
                     <h6 class="col-8 mb-5 mt-5 text-start">
-                        <p><strong>Il Servizio Clienti di PrestaKey</strong> è a tua disposizione per rispondere ad ogni domanda e assisterti nel processo di richiesta del finanziamento. Non esitare a contattarlo tramite <strong>mail, telefono o form dei contatti</strong>.</p> 
-                        <p>Grazie ai consulenti personali che ascoltano tutte le tue esigenze, con l’aiuto dei nostri partner il team di <strong>PrestaKey</strong> costruisce la soluzione migliore e su misura per te, lungo tutta la durata del finanziamento.</a></p>
-                        <p>E-mail: ...</p>
-                        <p>Telefono: ...</p>
-                        <p>(Lunedì-Venerdì / 8:00-20:00, Sabato / 10:00-13:00)</p>
-                        <p>Oppure scrivici <strong>compilando il form sottostante</strong>.</p>
+                        <?php echo $contattiRow2sottotitolo ?>
                     </h6>
                 </div>
             </div>
@@ -41,3 +44,9 @@
     </div>
 </section>
 <!-- Row 02 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

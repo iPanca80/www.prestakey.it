@@ -1,3 +1,11 @@
+<?php 
+
+    if( have_rows('banca_row_3') ):
+        while( have_rows('banca_row_3') ): the_row();
+
+        $bancaRow3Titolo = get_sub_field('banca_row_3_titolo');
+
+?>
 <!-- Row 03 - start -->
 <style>
 .page-id-43 .row-three > .container {
@@ -19,7 +27,7 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5">Gestione e vendita di prodotti bancari, con <strong>PrestaKey</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5"><?php echo $bancaRow3Titolo ?></h1>
             </div>
             <div class="col-12">
                 <div class="col-12">
@@ -30,3 +38,9 @@
     </div>
 </section>
 <!-- Row 03 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

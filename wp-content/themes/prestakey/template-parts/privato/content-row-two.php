@@ -1,4 +1,12 @@
+<?php 
 
+    if( have_rows('privato_row_2') ):
+        while( have_rows('privato_row_2') ): the_row();
+
+        $privatoRow2Titolo = get_sub_field('privato_row_2_titolo');
+        $privatoRow2sottotitolo = get_sub_field('privato_row_2_sottotitolo');
+
+?>
 <!-- Row 02 - start -->
 <style>
     .page-id-28 section.row-two .container {
@@ -21,7 +29,7 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start">Inserisci i tuoi dati per trovare il <strong>finanziamento più adatto a te</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $privatoRow2Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 text-start">
@@ -29,13 +37,16 @@
                 </div>
                 <div class="col-12 d-flex justify-content-end">
                     <h6 class="col-8 mb-5 mt-5 text-start">
-                        <p>Grazie ad una <strong>nuova tecnologia</strong> all’avanguardia, <strong>PrestaKey</strong> analizza a fondo il tuo profilo finanziario in poco tempo e, in base alle tue caratteristiche, <strong>ti raccomanda le migliori opzioni</strong> dei nostri partner finanziari <strong>per avere la liquidità richiesta</strong>. </p> 
-                        <p>Se avrai scelto uno dei nostri partner, in caso di valutazione positiva <strong>otterrai il tuo credito entro cinque giorni lavorativi (*)</strong>.</p>
-                        <p style="font-size:10px;"><strong>(*) i tempi possono variare in funzione dei tempi di allineamento tra l’Istituto Bancario erogante e l’Istituto Bancario del richiedente.</strong></p>
-                    </h6>
+                        <?php echo $privatoRow2sottotitolo ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Row 02 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

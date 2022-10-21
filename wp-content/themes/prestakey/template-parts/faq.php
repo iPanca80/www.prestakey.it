@@ -5,7 +5,7 @@ $f = 0;
 if ( is_post_type_archive('faq') ) {
   $f = 50;
 } else {
-  $f = 5;
+  $f = 50;
 }
 
     $args = array(  

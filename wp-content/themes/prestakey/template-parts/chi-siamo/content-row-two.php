@@ -1,4 +1,12 @@
+<?php 
 
+    if( have_rows('noi_row_2') ):
+        while( have_rows('noi_row_2') ): the_row();
+
+        $noiRow2Titolo = get_sub_field('noi_row_2_titolo');
+        $noiRow2sottotitolo = get_sub_field('noi_row_2_sottotitolo');
+
+?>
 <!-- Row 02 - start -->
 <style>
 .page-id-46 section.row-two .container {
@@ -12,7 +20,7 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><strong>PrestaKey</strong>: il modo migliore per ottenere liquidità.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $noiRow2Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 text-start">
@@ -20,10 +28,7 @@
                 </div>
                 <div class="col-12 d-flex justify-content-end">
                     <h6 class="col-8 mb-5 mt-5 text-start">
-                        <p><strong>PrestaKey</strong> è una innovativa piattaforma italiana che si pone come obiettivo quello di orientare <a href="/sono-una-azienda/">aziende, ditte individuali</a> e <a href="/sono-un-privato/">privati</a>, a fare la <strong>giusta richiesta di prodotti finanziari</strong> in modo da ottenere liquidità rapidamente, riducendo il rischio di vedersi rifiutata la richiesta di credito.</p> 
-                        <p>È tutto molto semplice. Inserisci su <strong>PrestaKey</strong> i tuoi dati o della tua azienda. Grazie alla tecnologia avanzata, in <strong>pochi minuti la piattaforma analizza a fondo il tuo profilo finanziario</strong> e, in base alle tue caratteristiche, ti suggerisce il tipo di finanziamento che meglio si adatta al tuo profilo.
-                        <strong>Successivamente, se vorrai, ti proporrà le migliori opzioni dei nostri partner per ottenere la liquidità richiesta</strong>. Potrai ottenere il tuo credito entro cinque giorni lavorativi (*).</p>
-                        <p style="font-size:10px;"><strong>(*) i tempi possono variare in funzione dei tempi di allineamento tra l’Istituto Bancario erogante e l’Istituto Bancario del richiedente.</strong></p>
+                        <?php echo $noiRow2sottotitolo ?>
                     </h6>
                 </div>
             </div>
@@ -31,3 +36,9 @@
     </div>
 </section>
 <!-- Row 02 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

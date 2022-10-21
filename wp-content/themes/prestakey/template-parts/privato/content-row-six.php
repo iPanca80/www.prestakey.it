@@ -1,4 +1,12 @@
+<?php 
 
+    if( have_rows('privato_row_6') ):
+        while( have_rows('privato_row_6') ): the_row();
+
+        $privatoRow6Titolo = get_sub_field('privato_row_6_titolo');
+        $privatoRow6sottotitolo = get_sub_field('privato_row_6_sottotitolo');
+
+?>
 <!-- Row 06 - start -->
 <style>
     .page-id-28 section.row-six .container {
@@ -12,11 +20,11 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5 text-start">Non sei ancora convinto?</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $privatoRow6Titolo ?></h1>
             </div>
             <div class="col-8">
                 <h4 class="mb-5 mt-5 text-start">
-                Il <strong>Servizio Clienti</strong> è a tua disposizione. Se hai bisogno di supporto <strong>non esitare a contattarlo</strong>.
+                <?php echo $privatoRow6sottotitolo ?>
                 </h4>
             </div>
             <div class="col-12 d-flex justify-content-end">
@@ -26,3 +34,9 @@
     </div>
 </section>
 <!-- Row 06 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

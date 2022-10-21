@@ -1,4 +1,11 @@
+<?php 
 
+if( have_rows('noi_row_5') ):
+    while( have_rows('noi_row_5') ): the_row();
+
+    $noiRow5Titolo = get_sub_field('noi_row_5_titolo');
+
+?>
 <!-- Row 05 - start -->
 <style>
     .page-id-46 section.row-five .container {
@@ -12,7 +19,7 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5">Il team partner di <strong>PrestaKey</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5"><?php echo $noiRow5Titolo ?></h1>
             </div>
             <div class="col-8">
                 <h4 class="mb-5 mt-5">
@@ -22,3 +29,9 @@
     </div>
 </section>
 <!-- Row 05 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

@@ -1,4 +1,12 @@
+<?php 
 
+    if( have_rows('home_row_2') ):
+        while( have_rows('home_row_2') ): the_row();
+
+        $homeRow2Titolo = get_sub_field('home_row_2_titolo');
+        $homeRow2sottotitolo = get_sub_field('home_row_2_sottotitolo');
+
+?>
 <!-- Row 02 - start -->
 <style>
     .home section.row-two .container {
@@ -21,7 +29,7 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start">Apri le porte del credito con <strong>PrestaKey</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $homeRow2Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 text-start">
@@ -55,7 +63,7 @@
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 text-start">
                     <h6 class="mb-5 mt-5">
-                    <p>Grazie alla tecnologia avanzata di <strong>PrestaKey</strong>, riceverai una risposta immediata alla tua <strong>richiesta di credito</strong>. In pochi giorni avrai la liquidità necessaria per i tuoi progetti. L’intero processo è <strong>online, gratuito e senza impegno</strong>.</p>
+                    <p><?php echo $homeRow2sottotitolo ?></p>
                     </h6>
                 </div>
             </div>
@@ -63,3 +71,9 @@
     </div>
 </section>
 <!-- Row 02 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

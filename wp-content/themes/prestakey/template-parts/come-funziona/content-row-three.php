@@ -1,4 +1,12 @@
+<?php 
 
+    if( have_rows('come_funziona_row_3') ):
+        while( have_rows('come_funziona_row_3') ): the_row();
+
+        $comeFunzionaRow3Titolo = get_sub_field('come_funziona_row_3_titolo');
+        $comeFunzionaRow3sottotitolo = get_sub_field('come_funziona_row_3_sottotitolo');
+
+?>
 <!-- Row 03 - start -->
 <style>
     .page-id-49 section.row-three .container {
@@ -21,7 +29,7 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex">
-                <h1 class="col-8 mb-5 mt-5">Apri le porte del credito con <strong>PrestaKey</strong>.</h1>
+                <h1 class="col-8 mb-5 mt-5"><?php echo $comeFunzionaRow3Titolo ?></h1>
             </div>
             <div class="col-12">
             <div class="col-12 d-flex text-start">
@@ -51,8 +59,7 @@
                     </div>
                 <div class="col-12 d-flex">
                     <h6 class="col-8 mb-5 mt-5">
-                        <p>Grazie alla <strong>tecnologia avanzata di PrestaKey</strong>, riceverai una risposta immediata alla tua <strong>richiesta di credito</strong>. E in pochi giorni avrai la liquidità necessaria 
-        per i tuoi progetti. L’intero processo è online, gratuito e senza impegno.</p>
+                        <?php echo $comeFunzionaRow3sottotitolo ?>
                     </h6>
                 </div>
             </div>
@@ -60,3 +67,9 @@
     </div>
 </section>
 <!-- Row 03 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

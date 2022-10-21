@@ -79,6 +79,12 @@ get_header();
         get_template_part( '/template-parts/sei-una-banca/content-row-four' );
     } /** content sei una banca */
 
+    /** content faq */
+    if ( is_page(300) ) {
+        get_template_part( '/template-parts/faq/content-row-two' );
+        get_template_part( '/template-parts/faq/content-row-three' );
+    } /** content faq */
+
 ?>
   
 

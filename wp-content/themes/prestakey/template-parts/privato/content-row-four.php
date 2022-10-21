@@ -1,4 +1,17 @@
-<!-- Row 03 - start -->
+<?php 
+
+    if( have_rows('privato_row_4') ):
+        while( have_rows('privato_row_4') ): the_row();
+
+        $privatoRow4Titolo = get_sub_field('privato_row_4_titolo');
+        $privatoRow4sottotitolo = get_sub_field('privato_row_4_sottotitolo');
+        $privatoRow4Titolo2 = get_sub_field('privato_row_4_titolo_2');
+        $privatoRow4Titolo3 = get_sub_field('privato_row_4_titolo_3');
+        $privatoRow4TitoloAsterisco = get_sub_field('privato_row_4_titolo_asterisco');
+        $privatoRow4DescrizioneAsterisco = get_sub_field('privato_row_4_descrizione_asterisco');
+
+?>
+<!-- Row 04 - start -->
 <style>
 .page-id-28 section.row-four > .container {
     background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-privato-row-four-left.svg);
@@ -40,30 +53,35 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start">Realizza i tuoi progetti, <strong>PrestaKey</strong> ti dà credito.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $privatoRow4Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <h6 class="col-8 mb-5 mt-5 text-start">
-                    <p><strong>Trasforma i tuoi progetti in realtà</strong>. Ottieni il finanziamento ovunque tu sia in pochi click. Tutto online.</p>
-                    <p><strong>L’intero processo si svolge online</strong>, senza noiosi appuntamenti in filiale e senza dover attendere l’incontro con il gestore bancario. <strong>In totale sicurezza, preservando la tua privacy</strong>.</p>
+                    <?php echo $privatoRow4sottotitolo ?>
                 </h6>
             </div>
             <div class="col-12">
-                <h2 class="col-12 mt-5 mb-5 text-center">Come funziona la <strong>procedura</strong>?</h2>
+                <h2 class="col-12 mt-5 mb-5 text-center"><?php echo $privatoRow4Titolo2 ?></h2>
                 <div class="col-12">
                 <?php get_template_part( '/template-parts/features' ); ?>
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h3 class="col-8 mt-5 mb-5 text-start"><strong>In qualsiasi momento</strong> potrai chiedere l’intervento di un nostro operatore che, al telefono, ti guiderà nella procedura.</h3>
+                <h3 class="col-8 mt-5 mb-5 text-start"><?php echo $privatoRow4Titolo2 ?></h3>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-8 justify-content-end text-start">
-                <p class="mt-5 mb-1"><strong>* Perché la piattaforma ha bisogno degli estratti conto delle mie banche?</strong></p>
-                <p class="mb-5 lh-base">Per farti la miglior proposta possibile, Prestakey ha bisogno di alcune informazioni sui conti della banca che utilizzi. Ti chiederà di condividere questi dettagli collegando il tuo conto alla richiesta di finanziamento. Per farlo ti basterà accedere al tuo internet banking durante il processo. Grazie all’Open Banking, questi passaggi si svolgeranno nella massima sicurezza e nel pieno rispetto della tua privacy. In pochi minuti otterrai una risposta alla tua richiesta.</p>  
+                <p class="mt-5 mb-1"><?php echo $privatoRow4TitoloAsterisco ?></p>
+                <p class="mb-5 lh-base"><?php echo $privatoRow4DescrizioneAsterisco ?></p>  
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Row 03 - end -->
+<!-- Row 04 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>

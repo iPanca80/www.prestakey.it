@@ -1,3 +1,13 @@
+<?php 
+
+    if( have_rows('banca_row_2') ):
+        while( have_rows('banca_row_2') ): the_row();
+
+        $bancaRow2Titolo = get_sub_field('banca_row_2_titolo');
+        $bancaRow2sottotitolo = get_sub_field('banca_row_2_sottotitolo');
+        $bancaRow2Titolo2 = get_sub_field('banca_row_2_titolo_2');
+
+?>
 <!-- Row 02 - start -->
 <style>
 .page-id-43 section.row-two > .container {
@@ -14,15 +24,15 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><strong>PrestaKey</strong>: il nostro gruppo è la tua soluzione.</h1>
+                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $bancaRow2Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <h6 class="col-8 mb-5 text-start">
-                    <p><strong>Prestakey</strong> fa parte di un gruppo di aziende che integra al suo interno l’intero processo che serve ad una Banca per risparmiare tempo e risorse, nella valutazione ed approvazione di una pratica di finanziamento.</p>
+                    <?php echo $bancaRow2sottotitolo ?>
                 </h6>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h2 class="col-8 mb-5 text-start">Il nostro gruppo gestisce le seguenti aree:</h2>
+                <h2 class="col-8 mb-5 text-start"><?php echo $bancaRow2Titolo2 ?></h2>
             </div>
                 <div class="col-12">
                     <?php get_template_part( '/template-parts/features-sei-una-banca' ); ?>
@@ -32,3 +42,9 @@
     </div>
 </section>
 <!-- Row 02 - end -->
+<?php 
+
+        endwhile; 
+    endif;
+
+?>
