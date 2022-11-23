@@ -19,7 +19,7 @@ class Faire_Database {
 
         if(!self::CheckIfTableExists("faire_person_account_ids")) {
             $suppress = $wpdb->suppress_errors();
-            $wpdb->query("CREATE TABLE `wordpress_602`.`faire_person_account_ids` (`id` INT NOT NULL AUTO_INCREMENT, `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, `personId` VARCHAR(100) NOT NULL, `connectionId` VARCHAR(100) NOT NULL, `accountId` VARCHAR(100) NOT NULL, `timestamp_export` TIMESTAMP NULL, PRIMARY KEY (`id`), UNIQUE INDEX `id_UNIQUE` (`id` ASC)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+            $wpdb->query("CREATE TABLE `faire_person_account_ids` (`id` INT NOT NULL AUTO_INCREMENT, `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, `personId` VARCHAR(100) NOT NULL, `connectionId` VARCHAR(100) NOT NULL, `accountId` VARCHAR(100) NOT NULL, `timestamp_export` TIMESTAMP NULL, PRIMARY KEY (`id`), UNIQUE INDEX `id_UNIQUE` (`id` ASC)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
             $wpdb->suppress_errors($suppress);
         }
 
