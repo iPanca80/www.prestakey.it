@@ -1,0 +1,180 @@
+[2022-10-26 09:10:31]	[ERROR]	[class.faire.php]	invalid_client - INVALID_CREDENTIALS: Invalid client credentials
+[2022-10-26 09:13:33] [ERROR] [class.faire.php] ->	invalid_client - INVALID_CREDENTIALS: Invalid client credentials
+[2022-10-26 09:19:36] [ERROR] [class.faire.php] ->	 - 
+[2022-10-26 09:19:49] [ERROR] [class.faire.php] ->	PERSON_ALREADY_EXISTS - Person '123e4567-e89b-12d3-a456-426614174aaa' already exist
+[2022-10-26 09:23:25] [ERROR] [class.faire.php] ->	PERSON_NOT_FOUND - Could not find person '123e4567-e89b-12d3-a456-426614174999'
+[2022-10-26 09:24:58] [ERROR] [class.faire.php] ->	 - 
+[2022-10-26 09:25:16] [ERROR] [class.faire.php] ->	PERSON_NOT_FOUND - Could not find person '123e4567-e89b-12d3-a456-42aaa4174ddd'
+[2022-10-26 09:26:22] [ERROR] [class.faire.php] ->	 - 
+[2022-10-26 09:26:35] [ERROR] [class.faire.php] ->	PERSON_NOT_FOUND - Could not find person '123e4567-e89b-12d3-bbb6-426614174ddd'
+[2022-10-26 09:30:40] [ERROR] [class.faire.php] ->	PERSON_NOT_FOUND - Person f84eee8e-f3be-4566-b660-d6d614c78afd not found
+[2022-10-26 09:31:15] [ERROR] [class.faire.php] ->	ACCOUNT_CONNECTION_NOT_FOUND - Account connection f84eee8e-f3be-4566-b660-d6d614c78afd not found
+[2022-10-26 09:37:42] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis] - 
+[2022-10-26 09:40:06] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis] - 
+[2022-10-26 09:41:52] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]HTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:41:28 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-26 09:44:19] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]\tHTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:44:17 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-26 09:50:54] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]	HTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:50:39 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-26 09:53:45] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]	HTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:53:46 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-26 09:55:16] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]	HTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:55:16 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-26 09:56:16] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]	HTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:56:17 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-26 09:56:53] [ERROR] [class.faire.php] ->	[Faire_GetAllKpis]	HTTP/1.1 401 Unauthorized
+Date: Wed, 26 Oct 2022 09:56:54 GMT
+Content-Length: 0
+Connection: close
+WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+
+[2022-10-28 14:15:24] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid gender for gender
+[2022-10-28 14:16:24] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid country code for domicileAddress.country
+[2022-10-28 14:35:40] [ERROR] ->	[Faire_CreatePerson]	PERSON_ALREADY_EXISTS - Person 'BBC9FCD3-362A-CBA3-FBFB-7E5EB68BCA14' already exist
+[2022-10-31 12:48:23] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Empty lastName lastName
+[2022-10-31 12:51:37] [ERROR] ->	[Faire_CreateAccountConnection]	PERSON_NOT_FOUND - Person AE574806-0A42-471C-9087-D39C443E0192 not found
+[2022-10-31 12:53:51] [ERROR] ->	[Faire_CreateAccountConnection]	PERSON_NOT_FOUND - Person AE574806-0A42-471C-9087-D39C443E0192 not found
+[2022-10-31 13:08:38] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid country code for homeAddress.country
+[2022-10-31 13:35:41] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid phone number for phoneNumber
+[2022-10-31 14:12:40] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Empty fiscalCode fiscalCode
+[2022-10-31 14:14:51] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid phone number for phoneNumber
+[2022-10-31 14:17:19] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid phone number for phoneNumber
+[2022-11-02 09:48:51] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid phone number for phoneNumber
+[2022-11-02 09:49:16] [ERROR] ->	[Faire_CreatePerson]	INVALID_FIELD_FORMAT - Invalid phone number for phoneNumber
+[2022-11-02 14:27:22] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:29:30] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:29:33] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:29:35] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:30:12] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:30:35] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:32:13] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:32:25] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:48:06] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Conflicting query parameters "queryParameters" and "includeHistory". Only one can be provided at once
+[2022-11-02 14:48:09] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Conflicting query parameters "queryParameters" and "includeHistory". Only one can be provided at once
+[2022-11-02 14:50:27] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Conflicting query parameters "queryParameters" and "includeHistory". Only one can be provided at once
+[2022-11-02 14:50:29] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Conflicting query parameters "queryParameters" and "includeHistory". Only one can be provided at once
+[2022-11-02 14:51:48] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Conflicting query parameters "queryParameters" and "includeHistory". Only one can be provided at once
+[2022-11-02 14:52:42] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:54:31] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Conflicting query parameters "queryParameters" and "includeHistory". Only one can be provided at once
+[2022-11-02 14:55:10] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 14:59:54] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:00:10] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:19:16] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:19:17] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:47:24] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:47:29] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:48:49] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:48:56] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid request, one parameter among person or account needed
+[2022-11-02 15:57:34] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: AVERAGE_BALANCE for Entity: ACCOUNT_KPI
+[2022-11-02 15:58:10] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: AVERAGE_BALANCE for Entity: PERSON_KPI
+[2022-11-02 15:59:35] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: MONTHLY_TOTAL_OUTFLOW_MEAN for Entity: PERSON_KPI
+[2022-11-02 16:00:09] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: MONTHLY_TOTAL_OUTFLOW_MEAN for Entity: ACCOUNT_KPI
+[2022-11-03 15:33:22] [ERROR] ->	Faire Plugin not activated!
+[2022-11-03 15:36:26] [ERROR] ->	Faire Plugin not activated!
+[2022-11-03 15:36:48] [ERROR] ->	Faire Plugin not activated!
+[2022-11-03 17:04:24] [ERROR] ->	Faire Plugin not activated!
+[2022-11-03 17:06:34] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILI TY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:08:51] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: MORTGAGE_AFFOR DABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:08:53] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: MICROLOAN_AFFOR DABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:09:13] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:16:36] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: MICROLOAN_AFFOR DABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:17:21] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: MORTGAGE_AFFOR DABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:17:22] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILI TY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:17:26] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: OTHER_INCOME_MONTHLY_SUM_MEAN_3MO for Entity: PERSON_KPI
+[2022-11-03 17:19:06] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:19:21] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: OTHER_INCOME_MONTHLY_SUM_MEAN_3MO for Entity: PERSON_KPI
+[2022-11-03 17:25:02] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-03 17:25:19] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: OTHER_INCOME_MONTHLY_SUM_MEAN_3MO for Entity: PERSON_KPI
+[2022-11-04 06:40:27] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-04 06:40:34] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: LOAN_AFFORDABILITY_RANGES for Entity: PERSON_KPI
+[2022-11-04 06:40:41] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: OTHER_INCOME_MONTHLY_SUM_MEAN_3MO for Entity: PERSON_KPI
+[2022-11-04 06:40:48] [ERROR] ->	[Faire_GetKpi]	INVALID_FIELD_FORMAT - Invalid  KPI: OTHER_INCOME_MONTHLY_SUM_MEAN_3MO for Entity: PERSON_KPI
+[2022-11-15 15:27:50] [ERROR] ->	Faire Plugin not activated!
