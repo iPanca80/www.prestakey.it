@@ -74,12 +74,12 @@ width:200px;
 cursor: pointer;
 }
 </style>
-<div class="contact-form row col-8 pt-3 pb-3">
-      <div class="form-field col-lg-6">
+<div class="contact-form row col-lg-8 col-12">
+      <div class="form-field col-lg-6 col-12">
          <input id="name" class="input-text js-input" type="text" required>
          <label class="label" for="name">Nome e cognome</label>
       </div>
-      <div class="form-field col-lg-6">
+      <div class="form-field col-lg-6 col-12">
          <select id="chi-sei" class="input-text js-input" type="text" required>
             <option value=""></option>
             <option style="color:#000;" value="Sono un privato">Sono un privato</option>
@@ -87,11 +87,11 @@ cursor: pointer;
          </select>
          <label class="label" for="chi-sei">Chi sei?</label>
       </div>
-      <div class="form-field col-lg-6 ">
+      <div class="form-field col-lg-6 col-12">
          <input id="email" class="input-text js-input" type="email" required>
          <label class="label" for="email">E-mail</label>
       </div>
-       <div class="form-field col-lg-6 ">
+       <div class="form-field col-lg-6 col-12">
          <input id="phone" class="input-text js-input" type="text" required>
          <label class="label" for="phone">Numero di telefono</label>
       </div>

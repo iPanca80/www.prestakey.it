@@ -20,10 +20,10 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $comeFunzionaRow5Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4"><?php echo $comeFunzionaRow5Titolo ?></h1>
             </div>
-            <div class="col-8">
-                <h4 class="mb-5 mt-5">
+            <div class="col-lg-8 col-12">
+                <h4 class="mt-4">
                 <?php echo $comeFunzionaRow5sottotitolo ?>
                 </h4>
             </div>

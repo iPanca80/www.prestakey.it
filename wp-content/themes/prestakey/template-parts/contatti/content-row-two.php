@@ -29,13 +29,13 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <div class="col-8">
-                    <h1 class="mb-5 mt-5 text-start"><?php echo $contattiRow2Titolo ?></h1>
+                <div class="col-lg-8 col-12">
+                    <h1 class="mb-4 text-start"><?php echo $contattiRow2Titolo ?></h1>
                 </div>
             </div>
             <div class="col-12">
                 <div class="col-12 d-flex justify-content-end">
-                    <h6 class="col-8 mb-5 mt-5 text-start">
+                    <h6 class="col-lg-8 col-12 mt-4 text-start">
                         <?php echo $contattiRow2sottotitolo ?>
                     </h6>
                 </div>

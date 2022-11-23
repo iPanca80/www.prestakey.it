@@ -40,10 +40,10 @@
 	<header id="header" class="header-site">
 		<div class="container">
 			<div class="d-flex col-12">
-				<div class="logo col-10">
+				<div class="logo col-8 col-md-10">
 					<img src="<?php echo get_template_directory_uri(); ?>/svg/logo-prestakey-white.svg" class="logo-prestakey">
 				</div>
-				<div class="main-menu col-2 d-flex justify-content-end">
+				<div class="main-menu col-4 col-md-2 d-flex justify-content-end">
 					<span class="mr-2">Menu</span>
 					<div id="nav-icon1">
   <span></span>
@@ -98,6 +98,11 @@
 				if ( is_page(300) ) {
 					get_template_part( '/template-parts/faq/content-row-one' );
 				} /** content faq */
+
+				/** content lavora con noi */
+				if ( is_page(372) ) {
+					get_template_part( '/template-parts/lavora-con-noi/content-row-one' );
+				} /** content lavora con noi */
 
 			?>
 		</div>

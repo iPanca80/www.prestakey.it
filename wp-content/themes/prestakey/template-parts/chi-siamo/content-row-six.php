@@ -12,8 +12,8 @@ if( have_rows('noi_row_6') ):
     .page-id-46 section.row-six .container {
         background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-chi-siamo-row-six.svg);
         background-repeat: no-repeat;
-        background-position: left 37px;
-        background-size: 22%;
+        background-position: right 12px;
+        background-size: 18%;
     }
     .row-six .select select {
         background: url(<?php echo get_template_directory_uri(); ?>/icons/down-arrow.svg) no-repeat right #fff;
@@ -25,22 +25,22 @@ if( have_rows('noi_row_6') ):
         margin-right:0;
     }
 </style>
-<section class="row-six row-custom right bg-color">
+<section class="row-six row-custom">
     <div class="container">
         <div>
-            <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $noiRow6Titolo ?></h1>
+            <div class="col-12 d-flex justify-content-start">
+                <h1 class="col-lg-8 col-12 mb-4 text-start"><?php echo $noiRow6Titolo ?></h1>
             </div>
-            <div class="col-12 d-flex justify-content-end">
-                <div class="col-8 text-start">
-                    <h6 class="mb-5 mt-5">
+            <div class="col-12 d-flex justify-content-start">
+                <div class="col-lg-8 col-12 text-start">
+                    <h6 class="mt-4">
                     <?php echo $noiRow6SottoTitolo ?>
                     </h6>
                 </div>
             </div>
-            <div class="col-12 d-flex justify-content-end">
-                <div class="col-8 text-start">
-                    <div class="col-12 d-flex text-start">
+            <div class="col-12 d-flex justify-content-start mt-4">
+                <div class="col-lg-8 col-12 text-start">
+                    <div class="col-12 d-lg-flex text-start">
                         <h2>Di quanto hai bisogno?</h2>
                         <div class="select select-money">
                             <select name="money" id="money">
@@ -50,7 +50,7 @@ if( have_rows('noi_row_6') ):
                             </select>
                         </div>
                     </div>
-                    <div class="col-12 d-flex text-start pt-3">
+                    <div class="col-12 d-lg-flex text-start pt-3">
                         <h2>Chi sei?</h2>
                         <div class="select select-typology">
                             <select name="typology" id="typology">

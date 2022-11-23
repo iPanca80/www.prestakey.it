@@ -1,5 +1,5 @@
 <!-- Prodotti - start -->
-<div class="container prodotti pt-5 pb-5">
+<div class="container prodotti">
 
     <div class="row align-items-start gx-5">
 
@@ -12,7 +12,7 @@ if( have_rows('banca_row_3_mercato_retail') ):
 
     ?>
 
-        <div class="col-6 mb-4">
+        <div class="col-lg-6 col-12 mb-5">
             <div class="card product-one h-100 shadow-lg">
                 <div class="card-body">
                 <div class="p-3">
@@ -58,7 +58,7 @@ if( have_rows('banca_row_3_mercato_corporate') ):
 
     ?>
 
-        <div class="col-6 mb-4">
+        <div class="col-lg-6 col-12">
             <div class="card product-two h-100 shadow-lg">
                 <div class="card-body">
                 <div class="p-3">

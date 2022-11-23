@@ -24,25 +24,25 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $homeRow3Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4"><?php echo $homeRow3Titolo ?></h1>
             </div>
-            <div class="col-8">
-                <h6 class="col-12 mb-5 mt-5">
+            <div class="col-lg-8 col-12">
+                <h6 class="col-12 mb-4 mt-4">
                     <?php echo $homeRow3sottotitolo ?>
                 </h6>
             </div>
-            <div class="col-12">
-                <h2 class="col-12 mt-5"><?php echo $homeRow3Titolo2 ?></h2>
+            <div class="col-12 mb-4 mt-4">
+                <h2 class="col-12"><?php echo $homeRow3Titolo2 ?></h2>
                 <div class="col-12">
                 <?php get_template_part( '/template-parts/features' ); ?>
                 </div>
             </div>
-            <div class="col-8">
-                <h3 class="col-12 mt-5 mb-5"><?php echo $homeRow3Titolo3 ?></h3>
+            <div class="col-lg-8 col-12">
+                <h3 class="col-12 mb-4 mt-4"><?php echo $homeRow3Titolo3 ?></h3>
             </div>
-            <div class="col-8">
-                <p class="col-12 mt-5 mb-1"><?php echo $homeRow3TitoloAsterisco ?></p>
-                <p class="col-12 mb-5 lh-base"><?php echo $homeRow3DescrizioneAsterisco ?></p>  
+            <div class="col-lg-8 col-12 mt-4">
+                <p class="col-12 mb-1"><?php echo $homeRow3TitoloAsterisco ?></p>
+                <p class="col-12 lh-base"><?php echo $homeRow3DescrizioneAsterisco ?></p>  
             </div>
         </div>
     </div>

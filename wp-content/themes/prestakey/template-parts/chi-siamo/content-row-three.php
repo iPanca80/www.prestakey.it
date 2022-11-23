@@ -4,7 +4,7 @@
         while( have_rows('noi_row_3') ): the_row();
 
         $noiRow3Titolo = get_sub_field('noi_row_3_titolo');
-
+        $noiRow3Sottotitolo = get_sub_field('noi_row_3_sottotitolo');
 ?>
 <!-- Row 03 - start -->
 <style>
@@ -19,11 +19,12 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $noiRow3Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4"><?php echo $noiRow3Titolo ?></h1>
             </div>
-            <div class="col-8">
-                <h4 class="mb-5 mt-5">
-                </h4>
+            <div class="col-lg-8 col-12">
+                <h6 class="col-lg-8 col-12 mt-4 text-start">
+                    <?php echo $noiRow3Sottotitolo ?>
+                </h6>
             </div>
         </div>
     </div>

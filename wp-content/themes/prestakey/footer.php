@@ -12,8 +12,8 @@
 ?>
 
         <footer id="footer">
-                <div class="container container d-flex align-items-start" style="margin-bottom: 50px;">
-                    <div class="col">
+                <div class="container container d-lg-flex align-items-start" style="margin-bottom: 50px;">
+                    <div class="col-lg-3 col-12">
                         <div class="fs-5 fw-light text-white">Il servizio</div>
                         <div class="list-menu-column mt-4">
                             <ul>
@@ -25,7 +25,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-12">
                         <div class="fs-5 fw-light text-white">I nostri prodotti</div>
                         <div class="list-menu-column mt-4">
                             <ul>
@@ -34,12 +34,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-12">
                         <div class="fs-5 fw-light text-white">Azienda</div>
                         <div class="list-menu-column mt-4">
                             <ul>
                                 <li><a href="/chi-siamo/">Chi siamo</a></li>
-                                <li><a href="#">Lavora con noi</a></li>
+                                <li><a href="/lavora-con-noi/">Lavora con noi</a></li>
                                 <!--<li><a href="#">Blog</a></li>-->
                                 <li><a href="/contatti/">Contattaci</a></li>
                                 <!--<li><a href="#">Recensioni e oponioni</a></li>-->
@@ -47,7 +47,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-12">
                         <div class="fs-5 fw-light text-white">Banche</div>
                         <div class="list-menu-column mt-4">
                             <ul>
@@ -66,8 +66,8 @@
                     wp_nav_menu( array( 
                         'theme_location' => 'main-menu',
                         'container' => 'div',
-                        'container_class' => 'main-menu-footer d-flex justify-content-center',
-                        'menu_class' => '',
+                        'container_class' => 'main-menu-footer d-lg-flex justify-content-center',
+                        'menu_class' => 'd-lg-flex',
                         'menu_id' => '',
                         'list_item_class' => '',
                         'add_a_class' => '',

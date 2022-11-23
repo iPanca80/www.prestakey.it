@@ -27,7 +27,7 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $bancaRow3Titolo ?></h1>
+                <h1 class="col-lg-8 mb-4"><?php echo $bancaRow3Titolo ?></h1>
             </div>
             <div class="col-12">
                 <div class="col-12">

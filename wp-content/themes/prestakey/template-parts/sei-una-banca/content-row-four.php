@@ -9,7 +9,7 @@
 <!-- Row 04 - start -->
 <style>
 .page-id-43 section.row-four .container {
-    background: url(http://prestakey/wp-content/themes/prestakey/svg/illustrazione-sei-una-banca-row-four.svg);
+    background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-sei-una-banca-row-four.svg);
     background-repeat: no-repeat;
     background-position: left 38px;
     background-size: 22%;
@@ -19,7 +19,7 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $bancaRow4Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4 text-start"><?php echo $bancaRow4Titolo ?></h1>
             </div>
             <div class="col-12">
                 <div class="col-12">
@@ -34,9 +34,9 @@ if( have_rows('banca_row_4_staff') ):
     $bancaRow4Immagine = get_sub_field('banca_row_4_immagine');
 
 ?>
-                <div class="p-5 mb-4 bg-light rounded-3 d-flex">
+                <div class="p-2 p-lg-5 bg-light rounded-3 d-lg-flex">
                     <div class="stefano-vantaggiato mr-3"><img src="<?php echo $bancaRow4Immagine ?>" alt="<?php echo $bancaRow4Nome ?>"></div>
-                    <div class="py-5 px-5">
+                    <div class="py-4 px-4 py-lg-5 px-lg-5">
                         <h4 class="fs-4 fw-bold"><?php echo $bancaRow4Nome ?></h1>
                         <p class="fs-5 fw-normal"><?php echo $bancaRow4Descrizione ?></p>
                         <p class="fs-6 fw-normal"><?php echo $bancaRow4Contatti ?></p>

@@ -21,16 +21,16 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5 text-white"><?php echo $homeRow5Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4 text-white"><?php echo $homeRow5Titolo ?></h1>
             </div>
-            <div class="mb-5 mt-5 col-8">
+            <div class="mb-4 mt-4 col-lg-8 col-12">
                 <p class="h6 col-12 text-white"><?php echo $homeRow5sottotitolo ?></p>
             </div>
-            <div class="col-12">
+            <div class="col-12 mb-4 mt-4">
             <?php get_template_part( '/template-parts/contact-form' ); ?>
             </div>
-            <div class="mb-5 mt-5 col-12">
-                <p class="h6 col-6 text-white"><?php echo $homeRow5sottotitolo2 ?></p>
+            <div class="mt-4 col-12">
+                <p class="h6 col-lg-6 col-12 text-white"><?php echo $homeRow5sottotitolo2 ?></p>
             </div>
         </div>
     </div>

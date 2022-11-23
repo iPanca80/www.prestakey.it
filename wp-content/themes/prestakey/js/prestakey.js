@@ -3,7 +3,20 @@
     var mainMenuContainer = $('.main-menu-container');
     var liMainMenu = $('ul li.menu-item', mainMenuContainer);
 
-    $(mainMenuContainer).css({'width':'69px','position':'fixed','top':'0','left':'0','height':'100%','transition': '.5s ease-in-out'});
+    var wWidth = $(window).width();
+    var w = wWidth;
+
+    //console.log(w);
+
+    if ( w >= 1440 ) {
+
+        $(mainMenuContainer).css({'width':'69px','position':'fixed','top':'0','left':'0','height':'100%','transition': '.5s ease-in-out'});
+
+    } else {
+
+        $(mainMenuContainer).css({'width':'69px','position':'fixed','top':'0','left':'-69px','height':'100%','transition': '.5s ease-in-out'});
+
+    }
 
     //var mainMenuContainerW = $(mainMenuContainer).width();
 
@@ -14,46 +27,83 @@
         $('#riduci_menu img').css({'margin-right':'0px'});
     }
 
-    $('#riduci_menu').click(function(){
-        if( $(mainMenuContainer).width('69') ){
-            $(mainMenuContainer).css({'margin-left':'-69px', 'transition':'all 0.5s ease-in-out 0s'});
-            $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').addClass('open');
-        } else {
-            $(mainMenuContainer).css({'margin-left':'-280px', 'transition':'all 1s ease-in-out 0s'});
-            $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').addClass('open');
-        }
-    });
+    if ( w >= 1440 ) {
 
-    $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		
-        $(this).toggleClass('open');
+        $('#riduci_menu').click(function(){
+            if( $(mainMenuContainer).width('69') ){
+                $(mainMenuContainer).css({'margin-left':'-69px', 'transition':'all 0.5s ease-in-out 0s'});
+                $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').addClass('open');
+            } else {
+                $(mainMenuContainer).css({'margin-left':'-280px', 'transition':'all 1s ease-in-out 0s'});
+                $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').addClass('open');
+            }
+        });
 
-        if ( $(this).hasClass('open')  ) {
-            $(mainMenuContainer).css({'width':'280px', 'margin-left':'0'});
-            $(mainMenuContainer).find('a.nav-link').css({'font-size':'14px','text-align':'left'});
-            $('#riduci_menu').css({'text-align':'left','font-size':'14px', 'padding':'10px 15px 10px 15px'});
-            $(mainMenuContainer).find('img.icon-menu').css({'margin-right':'15px'});
-            $('#riduci_menu img').css({'margin-right':'15px'});
-            setTimeout(function(){
-                //console.log( $('.main-menu-container').width() );
-                myMainMenuControl();
-            }, 100);
-        } else {
-            //console.log('no-open');
-            $(mainMenuContainer).css({'width':'69px','margin-left':'0'});
-            setTimeout(function(){
-                $(mainMenuContainer).find('a.nav-link').css({'font-size':'11px','text-align':'center'});
-                $(mainMenuContainer).find('img.icon-menu').css({'margin-right':'0px'});
-                $('#riduci_menu').css({'text-align':'center','font-size':'11px', 'padding':'10px 10px 10px 10px'});
-                $('#riduci_menu img').css({'margin-right':'0'});
-            }, 300);
+        $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+            
+            $(this).toggleClass('open');
 
-            setTimeout(function(){
-                myMainMenuControl();
-            }, 500);
-        } 
+            if ( $(this).hasClass('open')  ) {
+                $(mainMenuContainer).css({'width':'280px', 'margin-left':'0'});
+                $(mainMenuContainer).find('a.nav-link').css({'font-size':'14px','text-align':'left'});
+                $('#riduci_menu').css({'text-align':'left','font-size':'14px', 'padding':'10px 15px 10px 15px'});
+                $(mainMenuContainer).find('img.icon-menu').css({'margin-right':'15px'});
+                $('#riduci_menu img').css({'margin-right':'15px'});
+                setTimeout(function(){
+                    //console.log( $('.main-menu-container').width() );
+                    myMainMenuControl();
+                }, 100);
+            } else {
+                //console.log('no-open');
+                $(mainMenuContainer).css({'width':'69px','margin-left':'0'});
+                setTimeout(function(){
+                    $(mainMenuContainer).find('a.nav-link').css({'font-size':'11px','text-align':'center'});
+                    $(mainMenuContainer).find('img.icon-menu').css({'margin-right':'0px'});
+                    $('#riduci_menu').css({'text-align':'center','font-size':'11px', 'padding':'10px 10px 10px 10px'});
+                    $('#riduci_menu img').css({'margin-right':'0'});
+                }, 300);
 
-	});
+                setTimeout(function(){
+                    myMainMenuControl();
+                }, 500);
+            } 
+
+        });
+
+    } else {
+
+        $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+            
+            $(this).toggleClass('open');
+
+            if ( $(this).hasClass('open')  ) {
+                $(mainMenuContainer).css({'width':'280px', 'margin-left':'+69px'});
+                $(mainMenuContainer).find('a.nav-link').css({'font-size':'14px','text-align':'left'});
+                $('#riduci_menu').css({'text-align':'left','font-size':'14px', 'padding':'10px 15px 10px 15px'});
+                $(mainMenuContainer).find('img.icon-menu').css({'margin-right':'15px'});
+                $('#riduci_menu img').css({'margin-right':'15px'});
+                setTimeout(function(){
+                    //console.log( $('.main-menu-container').width() );
+                    myMainMenuControl();
+                }, 100);
+            } else {
+                //console.log('no-open');
+                $(mainMenuContainer).css({'width':'69px','margin-left':'0'});
+                setTimeout(function(){
+                    $(mainMenuContainer).find('a.nav-link').css({'font-size':'11px','text-align':'center'});
+                    $(mainMenuContainer).find('img.icon-menu').css({'margin-right':'0px'});
+                    $('#riduci_menu').css({'text-align':'center','font-size':'11px', 'padding':'10px 10px 10px 10px'});
+                    $('#riduci_menu img').css({'margin-right':'0'});
+                }, 300);
+
+                setTimeout(function(){
+                    myMainMenuControl();
+                }, 500);
+            } 
+
+        });
+
+    }
 
     function myMainMenuControl(){
         //console.log('sto eseguendo la funzone');
@@ -265,6 +315,33 @@
                 loop:false
             }
         }
-    })
+    });
+
+    var chiSei = $('.select.select-typology select#typology');
+
+    //console.log(chiSei);
+
+    $(function(){
+        // bind change event to select
+        $(chiSei).on('change', function () {
+
+            var url = $(this).val(); // get selected value
+
+            if (url === 'private') { // require a URL
+                setTimeout(function(){
+                window.location = '/sono-un-privato/'; // redirect
+                }, 100);
+            }
+
+            if (url === 'company') { // require a URL
+                setTimeout(function(){
+                window.location = '/sono-una-azienda/'; // redirect
+                }, 100);
+            }
+
+            return false;
+
+        });
+      });
 
 }( jQuery ) );

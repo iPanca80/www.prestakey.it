@@ -20,14 +20,14 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $homeRow6Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4"><?php echo $homeRow6Titolo ?></h1>
             </div>
-            <div class="col-12 d-flex justify-content-end">
-                <div class="col-7"><?php get_template_part( '/template-parts/faq' ); ?></div>
+            <div class="col-12 d-flex justify-content-end mt-4 mb-4">
+                <div class="col-lg-7 col-12"><?php get_template_part( '/template-parts/faq' ); ?></div>
             </div>
             <div class="col-12">
-                <div class="col-8">
-                    <h6 class="mb-5 mt-5">
+                <div class="col-lg-8 col-12">
+                    <h6 class="mt-4 mb-0">
                         <?php echo $homeRow6sottotitolo ?>
                     </h6>
                 </div>

@@ -59,7 +59,7 @@ get_header();
         get_template_part( '/template-parts/chi-siamo/content-row-two' );
         get_template_part( '/template-parts/chi-siamo/content-row-three' );
         get_template_part( '/template-parts/chi-siamo/content-row-four' );
-        get_template_part( '/template-parts/chi-siamo/content-row-five' );
+        /* get_template_part( '/template-parts/chi-siamo/content-row-five' ); */
         get_template_part( '/template-parts/chi-siamo/content-row-six' );
         get_template_part( '/template-parts/chi-siamo/content-row-seven' );
     } /** content chi-siamo */
@@ -84,6 +84,11 @@ get_header();
         get_template_part( '/template-parts/faq/content-row-two' );
         get_template_part( '/template-parts/faq/content-row-three' );
     } /** content faq */
+
+    /** content lavora con noi */
+    if ( is_page(372) ) {
+        get_template_part( '/template-parts/lavora-con-noi/content-row-two' );
+    } /** content lavora con noi */
 
 ?>
   

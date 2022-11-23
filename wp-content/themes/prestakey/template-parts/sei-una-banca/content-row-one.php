@@ -11,11 +11,11 @@
 <section class="row-one row-custom">
     <div class="col-12">
         <div class="slider">
-            <div class="col-8">
-                <h1 class="mb-5 mt-5 text-white"><?php echo $bancaRow1Titolo ?></h1>
+            <div class="col-lg-8 col-12">
+                <h1 class="mb-4 text-white"><?php echo $bancaRow1Titolo ?></h1>
             </div>
-            <div class="col-8">
-                <h4 class="mb-5 mt-5 text-white">
+            <div class="col-lg-8 col-12">
+                <h4 class="mt-4 text-white">
                     <?php echo $bancaRow1sottotitolo ?>
                 </h4>
             </div>

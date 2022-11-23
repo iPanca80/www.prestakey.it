@@ -18,8 +18,8 @@
 <section class="row-three row-custom">
     <div class="container">
         <div>
-        <div class="col-8">
-                <h1 class="mb-5 mt-5"><?php echo $contattiRow3Titolo ?></h1>
+        <div class="col-lg-8 col-12">
+                <h1 class="mb-4"><?php echo $contattiRow3Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
                 <div class="col-12"><?php get_template_part( '/template-parts/form-generale' ); ?></div>

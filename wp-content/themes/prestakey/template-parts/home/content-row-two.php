@@ -13,7 +13,7 @@
         background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-home-row-two.svg);
         background-repeat: no-repeat;
         background-position: left 37px;
-        background-size: 22%;
+        background-size: 17%;
     }
     .row-two .select select {
         background: url(<?php echo get_template_directory_uri(); ?>/icons/down-arrow.svg) no-repeat right #fff;
@@ -29,11 +29,11 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $homeRow2Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 text-start mb-4"><?php echo $homeRow2Titolo ?></h1>
             </div>
-            <div class="col-12 d-flex justify-content-end">
-                <div class="col-8 text-start">
-                    <div class="col-12 d-flex text-start">
+            <div class="col-12 d-lg-flex justify-content-end mb-4 mt-4">
+                <div class="col-lg-8 col-12 text-start">
+                    <div class="col-12 d-lg-flex text-start">
                         <h2>Di quanto hai bisogno?</h2>
                         <div class="select select-money">
                             <select name="money" id="money">
@@ -48,7 +48,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-12 d-flex text-start pt-3">
+                    <div class="col-12 d-lg-flex text-start pt-3">
                         <h2>Chi sei?</h2>
                         <div class="select select-typology">
                             <select name="typology" id="typology">
@@ -61,8 +61,8 @@
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <div class="col-8 text-start">
-                    <h6 class="mb-5 mt-5">
+                <div class="col-lg-8 col-12 text-start">
+                    <h6 class="mt-4">
                     <p><?php echo $homeRow2sottotitolo ?></p>
                     </h6>
                 </div>

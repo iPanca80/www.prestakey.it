@@ -20,14 +20,14 @@
     <div class="container">
         <div>
             <div class="col-12">
-                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $privatoRow6Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4 text-start"><?php echo $privatoRow6Titolo ?></h1>
             </div>
-            <div class="col-8">
-                <h4 class="mb-5 mt-5 text-start">
+            <div class="col-lg-8 col-12">
+                <h4 class="mb-4 mt-4 text-start">
                 <?php echo $privatoRow6sottotitolo ?>
                 </h4>
             </div>
-            <div class="col-12 d-flex justify-content-end">
+            <div class="col-12 d-flex justify-content-end mt-4">
                 <div class="col-12"><?php get_template_part( '/template-parts/form-generale' ); ?></div>
             </div>
         </div>

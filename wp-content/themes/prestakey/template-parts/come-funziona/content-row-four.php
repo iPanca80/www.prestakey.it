@@ -53,26 +53,26 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $comeFunzionaRow4Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4 text-start"><?php echo $comeFunzionaRow4Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h6 class="col-8 mb-5 mt-5 text-start">
+                <h6 class="col-lg-8 col-12 mb-4 mt-4 text-start">
                     <?php echo $comeFunzionaRow4sottotitolo ?>
                 </h6>
             </div>
             <div class="col-12">
-                <h2 class="col-12 mt-5 mb-5 text-center"><?php echo $comeFunzionaRow4Titolo2 ?></h2>
+                <h2 class="col-12 text-start"><?php echo $comeFunzionaRow4Titolo2 ?></h2>
                 <div class="col-12">
                 <?php get_template_part( '/template-parts/features' ); ?>
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h3 class="col-8 mt-5 mb-5 text-start"><?php echo $comeFunzionaRow4Titolo3 ?></h3>
+                <h3 class="col-lg-8 col-12 mb-4 text-start"><?php echo $comeFunzionaRow4Titolo3 ?></h3>
             </div>
             <div class="col-12 d-flex justify-content-end">
-            <div class="col-8 text-start">
-                <p class="mt-5 mb-1"><?php echo $comeFunzionaRow4TitoloAsterisco ?></p>
-                <p class="mb-5 lh-base"><?php echo $comeFunzionaRow4DescrizioneAsterisco ?></p>  
+            <div class="col-lg-8 col-12 text-start">
+                <p class="mb-1"><?php echo $comeFunzionaRow4TitoloAsterisco ?></p>
+                <p class="lh-base"><?php echo $comeFunzionaRow4DescrizioneAsterisco ?></p>  
             </div>
             </div>
         </div>

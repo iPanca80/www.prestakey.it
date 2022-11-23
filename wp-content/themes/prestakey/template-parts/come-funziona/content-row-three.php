@@ -9,12 +9,12 @@
 ?>
 <!-- Row 03 - start -->
 <style>
-    .page-id-49 section.row-three .container {
-        background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-home-row-two.svg);
-        background-repeat: no-repeat;
-        background-position: right 88px;
-        background-size: 22%;
-    }
+.page-id-49 section.row-three .container {
+    background: url(<?php echo get_template_directory_uri(); ?>/svg/illustrazione-home-row-two.svg);
+    background-repeat: no-repeat;
+    background-position: right 18px;
+    background-size: 17%;
+}
     .row-three .select select {
         background: url(<?php echo get_template_directory_uri(); ?>/icons/down-arrow.svg) no-repeat right #fff;
         background-size: 20px;
@@ -29,10 +29,9 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $comeFunzionaRow3Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4"><?php echo $comeFunzionaRow3Titolo ?></h1>
             </div>
-            <div class="col-12">
-            <div class="col-12 d-flex text-start">
+            <div class="col-12 d-lg-flex text-start">
                         <h2>Di quanto hai bisogno?</h2>
                         <div class="select select-money">
                             <select name="money" id="money">
@@ -47,7 +46,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-12 d-flex text-start pt-3">
+                    <div class="col-12 d-lg-flex text-start pt-3">
                         <h2>Chi sei?</h2>
                         <div class="select select-typology">
                             <select name="typology" id="typology">
@@ -58,7 +57,7 @@
                         </div>
                     </div>
                 <div class="col-12 d-flex">
-                    <h6 class="col-8 mb-5 mt-5">
+                    <h6 class="col-lg-8 col-12 mt-4">
                         <?php echo $comeFunzionaRow3sottotitolo ?>
                     </h6>
                 </div>

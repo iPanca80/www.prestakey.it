@@ -74,30 +74,32 @@ width:200px;
 cursor: pointer;
 }
 </style>
-<div class="contact-form row col-lg-8 col-12">
+<div class="contact-form row modulopsd2-bg col-lg-8 col-12 mb-4 mt-4 text-start">
       <div class="form-field col-lg-6 col-12">
+      <label class="label" for="name">Nome</label>
          <input id="name" class="input-text js-input" type="text" required>
-         <label class="label" for="name">Nome e cognome</label>
-      </div>
-      <div class="form-field col-lg-6">
-         <select id="chi-sei" class="input-text js-input" type="text" required>
-            <option value=""></option>
-            <option style="color:#000;" value="Sono un privato">Sono un privato</option>
-            <option style="color:#000;" value="Sono un'azienda">Sono un'azienda</option>
-         </select>
-         <label class="label" for="chi-sei">Chi sei?</label>
       </div>
       <div class="form-field col-lg-6 col-12">
+      <label class="label" for="chi-sei">Cognome</label>
+      <input id="cognome" class="input-text js-input" type="text" required>
+      </div>
+      <div class="form-field col-lg-6 col-12">
+      <label class="label" for="email">E-mail</label>
          <input id="email" class="input-text js-input" type="email" required>
-         <label class="label" for="email">E-mail</label>
       </div>
        <div class="form-field col-lg-6 col-12">
+       <label class="label" for="phone">Numero di telefono</label>
          <input id="phone" class="input-text js-input" type="text" required>
-         <label class="label" for="phone">Numero di telefono</label>
       </div>
-      <div class="form-field col-lg-12">
-         <input id="message" class="input-text js-input" type="text" required>
-         <label class="label" for="message">Messaggio</label>
+      <div class="col-12">
+      <div class="privacybox">
+        
+        <div class="check-item"><span class="wpcf7-form-control-wrap privacyPolicy"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="privacyPolicy" value="1" aria-invalid="false"></span></span></span> <span>Ho preso visione dell' <a href="/informative-e-privacy/richiesta-di-contatto/" target="_blank" class="exclude">informativa</a>  sul trattamento dei dati personali.</span></div>
+        <div class="check-item"><span class="wpcf7-form-control-wrap newsletter"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="newsletter" value="1" aria-invalid="false"></span></span></span> <span>Presto il consenso all’invio di newsletter - Finalità (b).</span></div>
+        <div class="check-item" style="margin-bottom:0;"><span class="wpcf7-form-control-wrap offeredServices"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="offeredServices" value="1" aria-invalid="false"></span></span></span> <span>Presto il consenso all’invio comunicazioni sui servizi offerti dalla piattaforma - Finalità (c).</span></div>
+        <div class="go-rec"><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small></div>
+        
+                </div>
       </div>
       <div class="form-field col-lg-12">
         <a href="#" class="cta-white" style="margin-left:0;">

@@ -24,17 +24,17 @@
     <div class="container">
         <div>
             <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5 text-start"><?php echo $bancaRow2Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4 text-start"><?php echo $bancaRow2Titolo ?></h1>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h6 class="col-8 mb-5 text-start">
+                <h6 class="col-lg-8 col-12 mb-4 mt-4 text-start">
                     <?php echo $bancaRow2sottotitolo ?>
                 </h6>
             </div>
             <div class="col-12 d-flex justify-content-end">
-                <h2 class="col-8 mb-5 text-start"><?php echo $bancaRow2Titolo2 ?></h2>
+                <h2 class="col-lg-8 col-12 text-start"><?php echo $bancaRow2Titolo2 ?></h2>
             </div>
-                <div class="col-12">
+                <div class="col-12 mt-4">
                     <?php get_template_part( '/template-parts/features-sei-una-banca' ); ?>
                 </div>
             </div>

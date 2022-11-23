@@ -19,10 +19,10 @@ if( have_rows('faq_row_2') ):
 <section class="row-two row-custom bg-color">
     <div class="container">
     <div class="col-12 d-flex justify-content-end">
-                <h1 class="col-8 mb-5 mt-5"><?php echo $faqRow2Titolo ?></h1>
+                <h1 class="col-lg-8 col-12 mb-4"><?php echo $faqRow2Titolo ?></h1>
             </div>
         <div class="col-12 d-flex justify-content-end">
-            <div class="col-8"><?php get_template_part( '/template-parts/faq' ); ?></div>
+            <div class="col-lg-8 col-12"><?php get_template_part( '/template-parts/faq' ); ?></div>
         </div>
     </div>
 </section>

@@ -3,7 +3,7 @@
 
     <div class="row align-items-start gx-5">
 
-        <div class="feature one col">
+        <div class="feature one col-12 col-xs-12 col-sm-12 col-lg-4">
             <div class="feature-container">
                 <div class="feature-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/icons/step1.svg" class="step step1">
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="feature two col">
+        <div class="feature two col-12 col-xs-12 col-sm-12 col-lg-4 mt-5 mt-lg-0">
             <div class="feature-container">
                 <div class="feature-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/icons/step2.svg" class="step step2">
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="feature three col">
+        <div class="feature three col-12 col-xs-12 col-sm-12 col-lg-4 mt-5 mt-lg-0">
             <div class="feature-container">
                 <div class="feature-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/icons/step3.svg" class="step step3">
@@ -37,7 +37,7 @@
 
     <div class="row align-items-start gx-5 pt-5">
 
-        <div class="feature four col">
+        <div class="feature four col-12 col-xs-12 col-sm-12 col-lg-4">
             <div class="feature-container">
                 <div class="feature-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/icons/step4.svg" class="step step4">
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div class="feature five col">
+        <div class="feature five col-12 col-xs-12 col-sm-12 col-lg-4 mt-5 mt-lg-0">
             <div class="feature-container">
                 <div class="feature-icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/icons/step5.svg" class="step step5">
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="feature six col">
+        <div class="feature six col-12 col-xs-12 col-sm-12 col-lg-4 mt-5 mt-lg-0">
             <div class="feature-container">
                 <div class="feature-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/icons/step6.svg" class="step step6">

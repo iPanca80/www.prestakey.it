@@ -82,6 +82,8 @@ function prestakey_scripts() {
 
 	wp_enqueue_script( 'prestakey', get_template_directory_uri() . '/js/prestakey.js','','',true );
 	wp_enqueue_script('prestakey');
+
+	wp_enqueue_style( 'prestakey-responsive', get_template_directory_uri() . '/css/responsive.css', array(), _S_VERSION  );
 }
 add_action( 'wp_enqueue_scripts', 'prestakey_scripts' );
 

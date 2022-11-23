@@ -50,7 +50,7 @@ section{
 
 header#header{
     background: linear-gradient(90deg, #264A9A 0%, #2E5AA6 50.52%, #2F8DCB 100%);
-    padding: 50px 0px 80px;
+    padding: 50px 0px 0px;
 }
 
 .slider{
@@ -72,7 +72,7 @@ header#header{
     font-weight: 500;
 }
 
-.slider h4{
+.slider .h4{
     font-weight: 300;
 }
 
@@ -398,7 +398,6 @@ padding: 10px 0px 20px 0px;
 padding: 0;
 margin: 0;
 list-style: none;
-display: flex;
 }
 
 .main-menu-footer #menu-main-menu li.menu-item {
@@ -424,7 +423,7 @@ display: flex;
     background: url(/wp-content/themes/prestakey/svg/illustrazione-privato.svg);
     background-repeat: no-repeat;
     background-position: right 0px;
-    background-size: 18%;
+    background-size: 16%;
 }
 
 section.row-custom a{
@@ -473,19 +472,26 @@ section.row-custom a{
     background-size: 33%;
 }
 
-.features .feature.col .feature-container{
+.page-id-372 .slider {
+    background: url( /wp-content/themes/prestakey/svg/illustrazione-come-funziona.svg );
+    background-repeat: no-repeat;
+    background-position: right 28px;
+    background-size: 33%;
+}
+
+.features .feature .feature-container{
     min-height: 240px;
 }
 
-.features .feature.col .feature-container h2{
+.features .feature .feature-container h2{
     font-weight: 500 !important;
 }
 
-.features .feature.col .feature-container img.step{
+.features .feature .feature-container img.step{
     width: 20%;
 }
 
-.features .feature.col .feature-container {
+.features .feature .feature-container {
     -webkit-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.1);
     box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.1);
     border-radius: 30px;
@@ -493,32 +499,32 @@ section.row-custom a{
     background: #fff;
 }
 
-.features .feature.one.col .feature-container {
+.features .feature.one .feature-container {
     background: url(/wp-content/themes/prestakey/icons/one.svg) #fff no-repeat 150px 0;
     background-size: 70%;
 }
 
-.features .feature.two.col .feature-container {
+.features .feature.two .feature-container {
     background: url(/wp-content/themes/prestakey/icons/two.svg) #fff no-repeat 150px 0;
     background-size: 70%;
 }
 
-.features .feature.three.col .feature-container {
+.features .feature.three .feature-container {
     background: url(/wp-content/themes/prestakey/icons/three.svg) #fff no-repeat 150px 0;
     background-size: 70%;
 }
 
-.features .feature.four.col .feature-container {
+.features .feature.four .feature-container {
     background: url(/wp-content/themes/prestakey/icons/four.svg) #fff no-repeat 150px 0;
     background-size: 70%;
 }
 
-.features .feature.five.col .feature-container {
+.features .feature.five .feature-container {
     background: url(/wp-content/themes/prestakey/icons/five.svg) #fff no-repeat 150px 0;
     background-size: 70%;
 }
 
-.features .feature.six.col .feature-container {
+.features .feature.six .feature-container {
     background: url(/wp-content/themes/prestakey/icons/six.svg) #fff no-repeat 150px 0;
     background-size: 70%;
 }
@@ -538,4 +544,70 @@ section.row-custom a{
     flex: 1 1 auto;
     padding: 0;
     color: var(--bs-card-color);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modulopsd2-bg {
+    background: #fff;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.modulopsd2 .contact-form.row{
+    margin: 0;
+}
+
+.modulopsd2 .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-width: 1px;
+    border-color: #efefef;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+    border-style: solid;
+    border-radius: 50px;
+    padding: 15px 15px;
+}
+
+.modulopsd2 .contact-form .label {
+    position: inherit;
+    left: 20px;
+    bottom: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, 
+-webkit-transform .2s ease-in-out;
+}
+
+.modulopsd2 .contact-form .form-field {
+    position: relative;
+    margin: 15px 0;
+}
+
+.privacybox {
+    border: 1px solid #e7e7e7;
+    padding: 10px 10px 10px 10px;
+    margin-top: 0px !important;
+    font-size: 11px;
+    color: #999;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: 400;
 }
