@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'prestakey' );
 
 /** Nome utente del database */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'prestakey' );
 
 /** Password del database */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'Presta.Key.2022' );
 
 /** Hostname del database */
 define( 'DB_HOST', 'localhost' );
