@@ -97,14 +97,14 @@ function mtnc_add_custom_style()
     mtnc_get_options_style();
 }
 
-function mtnc_add_google_fonts()
+function mtnc_add_bunny_fonts()
 {
     global $wp_scripts;
     $mt_options = mtnc_get_plugin_options(true);
     $font_link  = array();
 
     if (!empty($mt_options['body_font_family'])) {
-        $font_link[0] = mtnc_get_google_font(esc_attr($mt_options['body_font_family']));
+        $font_link[0] = mtnc_get_bunny_font(esc_attr($mt_options['body_font_family']));
         /*Check if chooses subset for fonts*/
         if (!empty($mt_options['body_font_subset'])) {
             $font_subset   = esc_attr($mt_options['body_font_subset']);
@@ -112,7 +112,7 @@ function mtnc_add_google_fonts()
         }
     }
     if (!empty($mt_options['countdown_font_family'])) {
-        $font_link[1] = mtnc_get_google_font(esc_attr($mt_options['countdown_font_family']));
+        $font_link[1] = mtnc_get_bunny_font(esc_attr($mt_options['countdown_font_family']));
     }
 
     if ($font_link) {
@@ -144,7 +144,7 @@ function mtnc_add_custom_scripts()
         $js_options['body_bg'] = esc_url($bg[0]);
     }
 
-    $js_options['font_link'] = mtnc_add_google_fonts();
+    $js_options['font_link'] = mtnc_add_bunny_fonts();
     wp_localize_script('_frontend', 'mtnc_front_options', $js_options);
 
     $wp_scripts->do_items('jquery_ie');
