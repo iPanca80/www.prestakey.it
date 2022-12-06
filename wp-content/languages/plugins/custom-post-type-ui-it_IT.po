@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Custom Post Type UI - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-24 20:46:40+0000\n"
+"PO-Revision-Date: 2022-11-29 19:31:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -154,10 +154,6 @@ msgstr "I dati forniti non sono validi"
 msgid "Successfully imported data."
 msgstr "Dati importati con successo"
 
-#: inc/support.php:165
-msgid "Why can I not use dashes in post type or taxonomy slugs?"
-msgstr "Perchè non posso usare il trattino negli slug del tipo di contenuto e delle tassonomie?"
-
 #: inc/post-types.php:777
 msgid "(e.g. Movies Attributes)"
 msgstr "(per es. attributi dei film)"
@@ -210,6 +206,10 @@ msgstr "Mostra impostazioni di base"
 #: inc/post-types.php:246 inc/taxonomies.php:250
 msgid "Slug has changed"
 msgstr "Lo slug è stato modificato"
+
+#: inc/taxonomies.php:449
+msgid "Toggle panel: Additional labels"
+msgstr "Label aggiuntive"
 
 #. translators: Placeholder will hold the name of the author of the plugin.
 #: inc/about.php:130
@@ -951,35 +951,35 @@ msgstr "Aggiunge il supporto %s"
 msgid "General"
 msgstr "Generale"
 
-#: inc/support.php:176
+#: inc/support.php:169
 msgid "Front-end Display"
 msgstr "Mostra nel front-end"
 
-#: inc/support.php:244
+#: inc/support.php:237
 msgid "Advanced"
 msgstr "Avanzato"
 
 #. translators: Placeholders are just for HTML markup that doesn't need
 #. translated
-#: inc/support.php:264
+#: inc/support.php:257
 msgid "Check out the %s function for documentation and usage examples."
 msgstr "Controlla la funzione %s per documentazione ed esempi di utilizzo."
 
-#: inc/support.php:271
+#: inc/support.php:264
 msgid "Post relationships?"
 msgstr "Relazioni dell'articolo?"
 
-#: inc/support.php:287
+#: inc/support.php:280
 msgid "Is there any function reference list?"
 msgstr "Esiste un elenco delle funzioni di riferimento?"
 
 #. translators: Placeholders are just for HTML markup that doesn't need
 #. translated
-#: inc/support.php:292
+#: inc/support.php:285
 msgid "%s has compiled a nice list of functions used by our plugin. Note not all will be useful as they are attached to hooks."
 msgstr "%s ha compilato un'utile lista delle funzioni utilizzate dal nostro plugin. Attenzione, non tutte potrebbero essere utili perchè allegate agli hook."
 
-#: inc/support.php:300
+#: inc/support.php:293
 msgid "Change text inside the post/page editor title field. Should be able to adapt as necessary."
 msgstr "Modifica il testo all'interno del campo titolo nella pagina/articolo. Dovrebbe adattarsi se necessario."
 
@@ -1047,7 +1047,7 @@ msgstr "\"Mostra UI\" deve essere \"true\". Se una pagina di livello superiore c
 msgid "Custom Post Type UI Support"
 msgstr "Supporto Custom Post Type UI"
 
-#: inc/support.php:259
+#: inc/support.php:252
 msgid "How do I add a newly registered taxonomy to a post type that already exists?"
 msgstr "Come faccio per aggiungere una tassonomia appena registrata ad un tipo di articolo che esiste già?"
 
@@ -1087,7 +1087,7 @@ msgstr "Assicurati che nel tuo tema sia abilitato il supporto \"miniatura artico
 msgid "Save Taxonomy"
 msgstr "Salva la tassonomia"
 
-#: inc/support.php:299
+#: inc/support.php:292
 msgid "How do I filter the \"enter title here\" text in the post editor screen?"
 msgstr "Come faccio per filtrare il testo \"Inserisci qui il titolo dell'articolo\" nella schermata di modifica dell'articolo?"
 
@@ -1219,25 +1219,25 @@ msgstr "(predefinito: falso) Se autorizzare la creazione automatica delle colonn
 msgid "Custom admin menu name for your custom post type."
 msgstr "Nome personalizzato nel menu amministratore per il tuo tipo di contenuto personalizzato."
 
-#: inc/support.php:247
+#: inc/support.php:240
 msgid "How do I add custom metaboxes to my post type?"
 msgstr "Come posso aggiungere meta box personalizzati al mio tipo di contenuto?"
 
 #. translators: Placeholders are just for HTML markup that doesn't need
 #. translated
-#: inc/support.php:214
+#: inc/support.php:207
 msgid "You will need to add your newly created post type to the types that the category and tag archives query for. You can see a tutorial on how to do that at %s"
 msgstr "Dovrai aggiungere il tuo tipo di contenuto appena creato ai tipi per i quali gli archivi di categorie e tag fanno una query. Puoi trovare un tutorial per farlo qui %s"
 
-#: inc/support.php:209
+#: inc/support.php:202
 msgid "I have added categories and tags to my custom post type, but they do not appear in the archives."
 msgstr "Ho aggiunto categorie e tag al mio tipo di contenuto personalizzato ma non compaiono negli archivi."
 
-#: inc/support.php:192
+#: inc/support.php:185
 msgid "How do I display my custom post type on my site?"
 msgstr "Come faccio per visualizzare il mio tipo di contenuto personalizzato sul sito?"
 
-#: inc/support.php:179
+#: inc/support.php:172
 msgid "What template files should I edit to alter my post type display?"
 msgstr "Quali file template dovrei modificare per alterare la visualizzazione del mio tipo di contenuto?"
 
@@ -1369,13 +1369,13 @@ msgstr "Mostra nel menu"
 
 #. translators: Placeholders are just for HTML markup that doesn't need
 #. translated
-#: inc/support.php:276
+#: inc/support.php:269
 msgid "%1$s has an excellent %2$spost%3$s introducing users to the %4$sPosts 2 Posts%5$s plugin that should be a good start."
 msgstr "%1$s ha un magnifico %2$sarticolo%3$s che introduce gli utenti al plugin %4$sPosts 2 Posts%5$s che potrebbe essere un buon inizio."
 
 #. translators: Placeholders are just for HTML markup that doesn't need
 #. translated
-#: inc/support.php:184
+#: inc/support.php:177
 msgid "Please visit the %1$sTemplate Hierarchy%2$s page on the WordPress codex for details about available templates."
 msgstr "Visita la pagina %1$sGerarchia del templat%2$ss sul codex di WordPress per dettagli sui template disponibili."
 

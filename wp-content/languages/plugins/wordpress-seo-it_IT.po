@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-22 17:59:52+0000\n"
+"PO-Revision-Date: 2022-11-27 09:09:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1122,7 +1122,7 @@ msgstr[0] "%s minuto"
 msgstr[1] "%s minuti"
 
 #. translators: 1: Expands to Yoast SEO
-#: src/presenters/admin/indexing-notification-presenter.php:120
+#: src/presenters/admin/indexing-notification-presenter.php:126
 msgid "Wait for a week or so, until %1$s automatically processes most of your content in the background."
 msgstr "Entro una settimana %1$s elaborerà automaticamente la maggior parte dei tuoi contenuti in background."
 
@@ -1156,7 +1156,7 @@ msgstr "Attiva il tuo abbonamento"
 msgid "Oops, something has gone wrong and we couldn't complete the optimization of your SEO data. Please click the button again to re-start the process. "
 msgstr "Oops, qualcosa non ha funzionato e non è possibile completare l'ottimizzazione dei dati SEO. Fai di nuovo clic sul pulsante per iniziare di nuovo il processo."
 
-#: src/presenters/admin/indexing-notification-presenter.php:87
+#: src/presenters/admin/indexing-notification-presenter.php:93
 msgid "You can speed up your site and get insight into your internal linking structure by letting us perform a few optimizations to the way SEO data is stored. "
 msgstr "Puoi rendere più veloce il tuo sito e ottenere informazioni sulla sua struttura dei link interni permettendoci di effettuare alcune ottimizzazioni al modo in cui i dati SEO sono memorizzati. "
 
@@ -1380,11 +1380,11 @@ msgstr "%1$sScopri come risolvere questo problema nella nostra sezione di aiuto%
 msgid "%1$s adds several columns to this page."
 msgstr "%1$s aggiunge diverse colonne a questa pagina."
 
-#: src/presenters/admin/indexing-notification-presenter.php:108
+#: src/presenters/admin/indexing-notification-presenter.php:114
 msgid "We estimate this will take less than a minute."
 msgstr "Stimiamo che ci vorrà meno di un minuto."
 
-#: src/presenters/admin/indexing-notification-presenter.php:112
+#: src/presenters/admin/indexing-notification-presenter.php:118
 msgid "We estimate this will take a couple of minutes."
 msgstr "Stimiamo che ci vorranno un paio di minuti."
 
@@ -1418,13 +1418,13 @@ msgstr "Non voglio che questo sito venga mostrato nei risultati di ricerca."
 msgid "If you want search engines to show this site in their results, you must %1$sgo to your Reading Settings%2$s and uncheck the box for Search Engine Visibility."
 msgstr "Se vuoi che i motori di ricerca mostrino questo sito nei loro risultati, %1$svai alle impostazioni di lettura%2$s e deseleziona la casella Visibilità ai motori di ricerca."
 
-#: src/presenters/admin/indexing-notification-presenter.php:115
+#: src/presenters/admin/indexing-notification-presenter.php:121
 msgid "We estimate this could take a long time, due to the size of your site. As an alternative to waiting, you could:"
 msgstr "Stimiamo che ciò potrebbe richiedere molto tempo a causa delle dimensioni del tuo sito. Invece di aspettare, potresti:"
 
 #. translators: 1: Link to article about indexation command, 2: Anchor closing
 #. tag, 3: Link to WP CLI.
-#: src/presenters/admin/indexing-notification-presenter.php:127
+#: src/presenters/admin/indexing-notification-presenter.php:133
 msgid "%1$sRun the indexation process on your server%2$s using %3$sWP CLI%2$s."
 msgstr "%1$sEsegui il processo di indicizzazione sul tuo server%2$s usando %3$sWP CLI%2$s."
 
@@ -1509,7 +1509,7 @@ msgstr "I commenti si dividono in più pagine"
 msgid "Comments are displayed on a single page"
 msgstr "I commenti vengono visualizzati su una singola pagina"
 
-#: src/helpers/post-helper.php:101
+#: src/helpers/post-helper.php:113
 msgid "No title"
 msgstr "Nessun titolo"
 
@@ -1806,10 +1806,6 @@ msgstr "La tua pagina Wikipedia"
 msgid "YouTube profile URL"
 msgstr "URL del profilo YouTube"
 
-#: admin/class-admin.php:294
-msgid "Tumblr profile URL"
-msgstr "URL del profiloTumblr"
-
 #: admin/class-admin.php:293
 msgid "SoundCloud profile URL"
 msgstr "URL del profilo SoundCloud"
@@ -1821,6 +1817,10 @@ msgstr "URL del profilo MySpace"
 #: src/generators/schema/article.php:136
 msgid "Uncategorized"
 msgstr "Senza categoria"
+
+#: admin/class-admin.php:294
+msgid "Tumblr profile URL"
+msgstr "URL del profilo Tumblr"
 
 #: admin/views/tabs/social/accounts.php:20
 msgid "If a Wikipedia page for you or your organization exists, add it too."
@@ -2203,7 +2203,7 @@ msgstr "Categoria primaria"
 msgid "Parent title"
 msgstr "Titolo genitore"
 
-#: admin/views/tabs/metas/post-types.php:25
+#: admin/views/tabs/metas/post-types.php:28
 msgid "The settings on this page allow you to specify what the default search appearance should be for any type of content you have. You can choose which content types appear in search results and what their default description should be."
 msgstr "Le impostazioni in questa pagina ti permettono di specificare quale sarà l'aspetto predefinito della ricerca per ciascuno tipo di contenuto che hai. Puoi scegliere quali tipi di contenuto fare apparire nei risultati di ricerca e quale sarà la loro descrizione predefinita."
 
@@ -3605,7 +3605,7 @@ msgid "Pinterest Rich Pins Validator"
 msgstr "Pinterest Rich Pins Validator"
 
 #. translators: %s expands to the name of a post type (plural).
-#: inc/class-upgrade.php:1310 inc/options/class-wpseo-option-titles.php:284
+#: inc/class-upgrade.php:1329 inc/options/class-wpseo-option-titles.php:284
 msgid "%s Archive"
 msgstr "Archivi %s"
 
@@ -3777,7 +3777,7 @@ msgstr "%1$s viene fornito con alcuni strumenti integrati molto potenti:"
 
 #. translators: %s expands to the variable used for term title.
 #: admin/formatter/class-term-metabox-formatter.php:164
-#: inc/class-upgrade.php:1313 inc/options/class-wpseo-option-titles.php:320
+#: inc/class-upgrade.php:1332 inc/options/class-wpseo-option-titles.php:320
 msgid "%s Archives"
 msgstr "%s Archivi"
 

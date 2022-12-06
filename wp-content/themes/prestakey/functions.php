@@ -129,7 +129,7 @@ function my_remove_menu_pages() {
 
   global $user_ID;
 
-  if ( $user_ID != 1 && $user_ID != 6 ) { //your user id
+  if ( $user_ID != 1 && $user_ID != 6 && $user_ID != 4 ) { //your user id
 	remove_menu_page('link-manager.php'); // Links
 	remove_menu_page('edit-comments.php'); // Comments
 	remove_menu_page('plugins.php'); // Plugins
@@ -142,7 +142,7 @@ function my_remove_menu_pages() {
 	remove_menu_page('upload.php');
   }
  
-  if ( $user_ID != 2 && $user_ID != 1 ) {
+  if ( $user_ID != 2 && $user_ID != 1 && $user_ID != 4 ) {
 	  remove_menu_page('edit.php?post_type=page'); // Pages
   }
 
