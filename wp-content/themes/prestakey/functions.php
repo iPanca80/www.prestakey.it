@@ -151,7 +151,7 @@ function my_remove_menu_pages() {
 /**
    * Remove tag p in acf field
    */
-function my_acf_add_local_field_groups() {
+/**function my_acf_add_local_field_groups() {
     remove_filter('acf_the_content', 'wpautop' );
 }
-add_action('acf/init', 'my_acf_add_local_field_groups');
+add_action('acf/init', 'my_acf_add_local_field_groups'); */
