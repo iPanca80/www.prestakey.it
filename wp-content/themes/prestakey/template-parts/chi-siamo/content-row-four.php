@@ -16,32 +16,32 @@ if( have_rows('noi_row_4') ):
 }
 
 .page-id-46 .features .feature.one .feature-container {
-    background: url(/wp-content/themes/prestakey/icons/staff.svg) #fff no-repeat 150px 61px;
+    background: url(<?php echo get_template_directory_uri(); ?>/icons/staff.svg) #fff no-repeat 150px 61px;
     background-size: 70%;
 }
 
 .page-id-46 .features .feature.two .feature-container {
-    background: url(/wp-content/themes/prestakey/icons/staff.svg) #fff no-repeat 150px 61px;
+    background: url(<?php echo get_template_directory_uri(); ?>/icons/staff.svg) #fff no-repeat 150px 61px;
     background-size: 70%;
 }
 
 .page-id-46 .features .feature.three .feature-container {
-    background: url(/wp-content/themes/prestakey/icons/staff.svg) #fff no-repeat 150px 61px;
+    background: url(<?php echo get_template_directory_uri(); ?>/icons/staff.svg) #fff no-repeat 150px 61px;
     background-size: 70%;
 }
 
 .page-id-46 .features .feature.four .feature-container {
-    background: url(/wp-content/themes/prestakey/icons/staff.svg) #fff no-repeat 150px 61px;
+    background: url(<?php echo get_template_directory_uri(); ?>/icons/staff.svg) #fff no-repeat 150px 61px;
     background-size: 70%;
 }
 
 .page-id-46 .features .feature.five .feature-container {
-    background: url(/wp-content/themes/prestakey/icons/staff.svg) #fff no-repeat 150px 61px;
+    background: url(<?php echo get_template_directory_uri(); ?>/icons/staff.svg) #fff no-repeat 150px 61px;
     background-size: 70%;
 }
 
 .page-id-46 .features .feature.six .feature-container {
-    background: url(/wp-content/themes/prestakey/icons/staff.svg) #fff no-repeat 150px 61px;
+    background: url(<?php echo get_template_directory_uri(); ?>/icons/staff.svg) #fff no-repeat 150px 61px;
     background-size: 70%;
 }
 

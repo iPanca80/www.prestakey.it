@@ -12,6 +12,65 @@
     //console.log(hostnameSplit[1]);
     //console.log(w);
 
+    //modifiche mobile
+    //small < 576
+
+    if ( w <= 576 ) {
+        //console.log('Ok sono nella misura 576');
+
+        //home
+        $('.home .desktop').hide();
+        $('.home .mobile').show();
+        $('.home .procedura').hide();
+        $('.home .row-five').hide();
+        $('.home .row-six').hide();
+
+        //privato
+        $('.page-id-28 .desktop').hide();
+        $('.page-id-28 .mobile').show();
+        $('.page-id-28 .row-three').hide();
+        $('.page-id-28 .row-four').hide();
+        $('.page-id-28 .row-six').hide();
+
+        //azienda
+        $('.page-id-30 .desktop').hide();
+        $('.page-id-30 .mobile').show();
+        $('.page-id-30 .row-three').hide();
+        $('.page-id-30 .row-four').hide();
+        $('.page-id-30 .row-six').hide();
+
+         //come funziona
+         $('.page-id-49 .desktop').hide();
+         $('.page-id-49 .mobile').show();
+         
+         var row2 = $('.page-id-49 .row-two').clone();
+         var row4 = $('.page-id-49 .row-four').clone();
+
+         $('.page-id-49 .row-two').remove();
+         $('.page-id-49 .row-four').remove();
+
+         $(row4).prependTo('.page-id-49 .container-fluid');
+         $(row2).appendTo('.page-id-49 .container-fluid');
+
+         $('.page-id-49 .row-five').hide();
+
+         //banca
+         $('.page-id-43 .desktop').hide();
+         $('.page-id-43 .mobile').show();
+
+         //chi siamo
+         $('.page-id-46 .desktop').hide();
+         $('.page-id-46 .mobile').show();
+         $('.page-id-46 .row-two').hide();
+         $('.page-id-46 .row-six').hide();
+
+         //contatti
+         $('.page-id-40 .desktop').hide();
+         $('.page-id-40 .mobile').show();
+         $('.page-id-40 .row-four').hide();
+
+    }
+
     if ( w >= 1440 ) {
 
         $(mainMenuContainer).css({'width':'69px','position':'fixed','top':'0','left':'0','height':'100%','transition': '.5s ease-in-out'});

@@ -5,8 +5,11 @@
 
         $homeRow3Titolo = get_sub_field('home_row_3_titolo');
         $homeRow3sottotitolo = get_sub_field('home_row_3_sottotitolo');
+        $homeRow3sottotitoloM = get_sub_field('home_row_3_sottotitolo_m');
         $homeRow3Titolo2 = get_sub_field('home_row_3_titolo_2');
+        $homeRow3Titolo2M = get_sub_field('home_row_3_titolo_2_m');
         $homeRow3Titolo3 = get_sub_field('home_row_3_titolo_3');
+        $homeRow3Titolo3M = get_sub_field('home_row_3_titolo_3_m');
         $homeRow3TitoloAsterisco = get_sub_field('home_row_3_titolo_asterisco');
         $homeRow3DescrizioneAsterisco = get_sub_field('home_row_3_descrizione_asterisco');
 
@@ -27,20 +30,25 @@
                 <h1 class="col-lg-8 col-12 mb-4"><?php echo $homeRow3Titolo ?></h1>
             </div>
             <div class="col-lg-8 col-12">
-                <h6 class="col-12 mb-4 mt-4">
+                <h6 class="col-12 mb-4 mt-4 desktop">
                     <?php echo $homeRow3sottotitolo ?>
+                </h6>
+                <h6 class="col-12 mb-4 mt-4 mobile" style="display:none;">
+                    <?php echo $homeRow3sottotitoloM ?>
                 </h6>
             </div>
             <div class="col-12 mb-4 mt-4">
-                <h2 class="col-12"><?php echo $homeRow3Titolo2 ?></h2>
-                <div class="col-12">
+                <h2 class="col-12 desktop"><?php echo $homeRow3Titolo2 ?></h2>
+                <h2 class="col-12 mobile"><?php echo $homeRow3Titolo2M ?></h2>
+                <div class="col-12 procedura">
                 <?php get_template_part( '/template-parts/features' ); ?>
                 </div>
             </div>
             <div class="col-lg-8 col-12">
-                <h3 class="col-12 mb-4 mt-4"><?php echo $homeRow3Titolo3 ?></h3>
+                <h3 class="col-12 mb-4 mt-4 desktop"><?php echo $homeRow3Titolo3 ?></h3>
+                <h6 class="col-12 mb-4 mt-4 mobile"><?php echo $homeRow3Titolo3M ?></h6>
             </div>
-            <div class="col-lg-8 col-12 mt-4">
+            <div class="col-lg-8 col-12 mt-4 desktop">
                 <p class="col-12 mb-1"><?php echo $homeRow3TitoloAsterisco ?></p>
                 <p class="col-12 lh-base"><?php echo $homeRow3DescrizioneAsterisco ?></p>  
             </div>
