@@ -5,6 +5,7 @@
 
         $contattiRow2Titolo = get_sub_field('contatti_row_2_titolo');
         $contattiRow2sottotitolo = get_sub_field('contatti_row_2_sottotitolo');
+        $contattiRow2sottotitoloM = get_sub_field('contatti_row_2_sottotitolo_m');
 
 ?>
 <!-- Row 02 - start -->
@@ -35,8 +36,11 @@
             </div>
             <div class="col-12">
                 <div class="col-12 d-flex justify-content-end">
-                    <h6 class="col-lg-8 col-12 mt-4 text-start">
+                    <h6 class="col-lg-8 col-12 mt-4 text-start desktop">
                         <?php echo $contattiRow2sottotitolo ?>
+                    </h6>
+                    <h6 class="col-lg-8 col-12 mt-4 text-start mobile">
+                        <?php echo $contattiRow2sottotitoloM ?>
                     </h6>
                 </div>
             </div>

@@ -454,10 +454,10 @@ section.row-custom a{
     color: var(--bs-card-color);
 }
 
-p {
+/*p {
     margin-top: 0;
     margin-bottom: 0;
-}
+}*/
 
 .modulopsd2-bg {
     background: #fff;

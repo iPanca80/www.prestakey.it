@@ -22,7 +22,7 @@
                 <!--<p class="fs-6">(*) i tempi possono variare in funzione dei tempi di allineamento tra l’Istituto Bancario erogante e l’Istituto Bancario del richiedente </p>-->
                 </h4>
             </div>
-            <div class="col-12 d-md-flex mt-4">
+            <div class="col-12 d-md-flex mt-4 desktop">
                 <div class="col-md-2 col-12"><h2 class="text-white">Chi sei?</h2></div>
                     <div class="cta-container col-md-10 d-md-flex col-12">
                         <a href="/sono-un-privato/" class="cta-white">

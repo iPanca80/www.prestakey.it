@@ -8,9 +8,73 @@
 
     var hostname = window.location.pathname;
     var hostnameSplit = hostname.split('/');
+    var hostnameSplitBar = '';
+
+    if ( hostnameSplit[1] === 'prestakey' ){
+        hostnameSplitBar = '/' + hostnameSplit[1];
+    }
 
     //console.log(hostnameSplit[1]);
     //console.log(w);
+
+    //modifiche mobile
+    //small < 576
+
+    if ( w <= 576 ) {
+        //console.log('Ok sono nella misura 576');
+
+        //home
+        $('.home .desktop').hide();
+        $('.home .mobile').show();
+        $('.home .procedura').hide();
+        $('.home .row-five').hide();
+        $('.home .row-six').hide();
+
+        //privato
+        $('.page-id-28 .desktop').hide();
+        $('.page-id-28 .mobile').show();
+        $('.page-id-28 .row-three').hide();
+        $('.page-id-28 .row-four').hide();
+        $('.page-id-28 .row-six').hide();
+
+        //azienda
+        $('.page-id-30 .desktop').hide();
+        $('.page-id-30 .mobile').show();
+        $('.page-id-30 .row-three').hide();
+        $('.page-id-30 .row-four').hide();
+        $('.page-id-30 .row-six').hide();
+
+         //come funziona
+         $('.page-id-49 .desktop').hide();
+         $('.page-id-49 .mobile').show();
+         
+         var row2 = $('.page-id-49 .row-two').clone();
+         var row4 = $('.page-id-49 .row-four').clone();
+
+         $('.page-id-49 .row-two').remove();
+         $('.page-id-49 .row-four').remove();
+
+         $(row4).prependTo('.page-id-49 .container-fluid');
+         $(row2).appendTo('.page-id-49 .container-fluid');
+
+         $('.page-id-49 .row-five').hide();
+
+         //banca
+         $('.page-id-43 .desktop').hide();
+         $('.page-id-43 .mobile').show();
+
+         //chi siamo
+         $('.page-id-46 .desktop').hide();
+         $('.page-id-46 .mobile').show();
+         $('.page-id-46 .row-two').hide();
+         $('.page-id-46 .row-six').hide();
+
+         //contatti
+         $('.page-id-40 .desktop').hide();
+         $('.page-id-40 .mobile').show();
+         $('.page-id-40 .row-four').hide();
+
+    }
 
     if ( w >= 1440 ) {
 
@@ -120,21 +184,21 @@
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     //console.log('69');
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/home.svg" class="main-menu-home icon-menu" style="margin-right:0;"> Home');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/home.svg" class="main-menu-home icon-menu" style="margin-right:0;"> Home');
                 } else {
                     //console.log('Matteo')
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/home.svg" class="main-menu-home icon-menu"> Home');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/home.svg" class="main-menu-home icon-menu"> Home');
                 }
     
             } else if ( $(this).hasClass('home') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/home-black.svg" class="main-menu-home icon-menu" style="margin-right:0;"> Home');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/home-black.svg" class="main-menu-home icon-menu" style="margin-right:0;"> Home');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/home-black.svg" class="main-menu-home icon-menu"> Home');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/home-black.svg" class="main-menu-home icon-menu"> Home');
                 }
     
             }
@@ -143,20 +207,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/user-white.svg" class="main-menu-privato icon-menu" style="margin-right:0;"> Privato');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/user-white.svg" class="main-menu-privato icon-menu" style="margin-right:0;"> Privato');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/user-white.svg" class="main-menu-privato icon-menu"> Sono un privato');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/user-white.svg" class="main-menu-privato icon-menu"> Sono un privato');
                 }
     
             } else if ( $(this).hasClass('privato') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/user-black.svg" class="main-menu-privato icon-menu" style="margin-right:0;"> Privato');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/user-black.svg" class="main-menu-privato icon-menu" style="margin-right:0;"> Privato');
             } else {
                 var linkMainMenu = $(this).find('a.nav-link');
-                $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/user-black.svg" class="main-menu-privato icon-menu"> Sono un privato');    
+                $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/user-black.svg" class="main-menu-privato icon-menu"> Sono un privato');    
             }
     
             }
@@ -165,20 +229,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/company-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Azienda');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/company-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Azienda');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/company-white.svg" class="main-menu-company icon-menu"> Sono un\'azienda');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/company-white.svg" class="main-menu-company icon-menu"> Sono un\'azienda');
                 }
     
             } else if ( $(this).hasClass('azienda') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/company-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Azienda');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/company-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Azienda');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/company-black.svg" class="main-menu-company icon-menu"> Sono un\'azienda');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/company-black.svg" class="main-menu-company icon-menu"> Sono un\'azienda');
                 }
     
             }
@@ -187,20 +251,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/faq-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> FAQ');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/faq-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> FAQ');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/faq-white.svg" class="main-menu-company icon-menu"> FAQ');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/faq-white.svg" class="main-menu-company icon-menu"> FAQ');
                 }
     
             } else if ( $(this).hasClass('faq') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/faq-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> FAQ');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/faq-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> FAQ');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/faq-black.svg" class="main-menu-company icon-menu"> FAQ');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/faq-black.svg" class="main-menu-company icon-menu"> FAQ');
                 }
     
             }
@@ -209,20 +273,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/contact-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Contatti');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/contact-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Contatti');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/contact-white.svg" class="main-menu-company icon-menu"> Contatti');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/contact-white.svg" class="main-menu-company icon-menu"> Contatti');
                 }
     
             } else if ( $(this).hasClass('contatti') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/contact-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Contatti');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/contact-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Contatti');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/contact-black.svg" class="main-menu-company icon-menu"> Contatti');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/contact-black.svg" class="main-menu-company icon-menu"> Contatti');
                 }
     
             }
@@ -231,20 +295,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/bank-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Banca?');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/bank-white.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Banca?');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/bank-white.svg" class="main-menu-company icon-menu"> Sei una banca?');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/bank-white.svg" class="main-menu-company icon-menu"> Sei una banca?');
                 }
     
             } else if ( $(this).hasClass('banca') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/bank-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Banca?');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/bank-black.svg" class="main-menu-company icon-menu" style="margin-right:0;"> Banca?');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/bank-black.svg" class="main-menu-company icon-menu"> Sei una banca?');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/bank-black.svg" class="main-menu-company icon-menu"> Sei una banca?');
                 }
     
             }
@@ -253,20 +317,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/group-white.svg" class="main-menu-company icon-menu" style="margin-right:0; width:26px;"> Noi');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/group-white.svg" class="main-menu-company icon-menu" style="margin-right:0; width:26px;"> Noi');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/group-white.svg" class="main-menu-company icon-menu"> Chi siamo');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/group-white.svg" class="main-menu-company icon-menu"> Chi siamo');
                 }
     
             } else if ( $(this).hasClass('chi-siamo') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/group-black.svg" class="main-menu-company icon-menu" style="margin-right:0;width:26px;"> Noi');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/group-black.svg" class="main-menu-company icon-menu" style="margin-right:0;width:26px;"> Noi');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/group-black.svg" class="main-menu-company icon-menu"> Chi siamo');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/group-black.svg" class="main-menu-company icon-menu"> Chi siamo');
                 }
     
             }
@@ -275,20 +339,20 @@
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/funziona-white.svg" class="main-menu-company icon-menu" style="margin-right:0; width:26px;"> Come?');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/funziona-white.svg" class="main-menu-company icon-menu" style="margin-right:0; width:26px;"> Come?');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/funziona-white.svg" class="main-menu-company icon-menu"> Come funziona');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/funziona-white.svg" class="main-menu-company icon-menu"> Come funziona');
                 }
     
             } else if ( $(this).hasClass('come-funziona') ) {
     
                 if( mainMenuContainerW > 68 && mainMenuContainerW < 70 ){
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/funziona-black.svg" class="main-menu-company icon-menu" style="margin-right:0;width:26px;"> Come?');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/funziona-black.svg" class="main-menu-company icon-menu" style="margin-right:0;width:26px;"> Come?');
                 } else {
                     var linkMainMenu = $(this).find('a.nav-link');
-                    $(linkMainMenu).html('').prepend('<img src="/' + hostnameSplit[1] + '/wp-content/themes/prestakey/icons/funziona-black.svg" class="main-menu-company icon-menu"> Come funziona');
+                    $(linkMainMenu).html('').prepend('<img src="' + hostnameSplitBar + '/wp-content/themes/prestakey/icons/funziona-black.svg" class="main-menu-company icon-menu"> Come funziona');
                 }
     
             }
